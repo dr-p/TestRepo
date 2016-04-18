@@ -12,7 +12,10 @@ public class RecipeService {
         numRecipes = 0;
     }
 
-    /* Primitive method, correct recursive method later */
+
+    /* Primitive method, correct recursive method later
+     * to find number of elements stored in tree
+      * */
     public int getNumRecipes() {
         return numRecipes;
     }
