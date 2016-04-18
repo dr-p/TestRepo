@@ -20,6 +20,7 @@ public class MainActivity extends AppCompatActivity {
         }
         //String numberRecipes = String.valueOf((new RecipeService()).count());
         //commit change
+        //commmit change from 2nd clone of project
 
         TextView tv = (TextView)findViewById(R.id.textView);
         tv.setText(String.valueOf(serv.getNumRecipes()));
