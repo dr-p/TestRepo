@@ -15,15 +15,16 @@ I ADDED A .gitignore FILE TO EXCLUDE THESE BUT JUST IN CASE YOU NEVER WANT TO CO
 
 
 TO COLLABORATE AND MAKE CHANGES TO THIS PROJECT:
-1. Open Android Studio
-2. Check out project from Version Control
-3. Select Github
-4. Enter https://github.com/dr-p/AllrecipeKillerApp.git for the "Git Repository URL"
-5. Choose a parent directory for the cloned project (Preferably a separate folder from your main AndroidStudio project
+1. Download Git from https://git-scm.com/
+2. Open Android Studio
+3. Check out project from Version Control
+4. Select Github
+5. Enter https://github.com/dr-p/AllrecipeKillerApp.git for the "Git Repository URL"
+6. Choose a parent directory for the cloned project (Preferably a separate folder from your main AndroidStudio project
 directory folder such as AndroidStudioGithub for example)
-6. Clone and open project
-7. If it throws errors of "cannot load modules" click the error details and remove the selected two .iml files
-8. In your left project window view, the app files should now be available.
+7. Clone and open project
+8. If it throws errors of "cannot load modules" click the error details and remove the selected two .iml files
+9. In your left project window view, the app files should now be available.
 
 MAKE TEST COMMMIT
 1. ALWAYS SELECT VCS -> UPDATE PROJECT BEFORE BEGINNING WORK ON CODE AS WELL AS BEFORE MAKING A COMMIT TO AVOID CODE CONFLICTS
