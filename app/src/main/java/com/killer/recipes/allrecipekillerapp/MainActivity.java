@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         //commit change
         //commit change from 2nd clone of project
         //3rd commit after updating project in primary branch
-
+        //test commmit for readme purposes
         TextView tv = (TextView)findViewById(R.id.textView);
         tv.setText(String.valueOf(serv.getNumRecipes()));
     }
