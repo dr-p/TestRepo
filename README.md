@@ -14,7 +14,7 @@ I ADDED A .gitignore FILE TO EXCLUDE THESE BUT JUST IN CASE YOU NEVER WANT TO CO
 /build
 
 
-TO COLLABORATE AND MAKE CHANGES TO THIS PROJECT:
+TO BEGIN COLLABORATING AND MAKING CHANGES TO THIS PROJECT:
 1. Download Git from https://git-scm.com/
 2. Open Android Studio
 3. Check out project from Version Control
@@ -26,7 +26,7 @@ directory folder such as AndroidStudioGithub for example)
 8. If it throws errors of "cannot load modules" click the error details and remove the selected two .iml files
 9. In your left project window view, the app files should now be available.
 
-MAKE TEST COMMMIT
+TO MAKE FIRST TEST COMMMIT
 1. ALWAYS SELECT VCS -> UPDATE PROJECT BEFORE BEGINNING WORK ON CODE AS WELL AS BEFORE MAKING A COMMIT TO AVOID CODE CONFLICTS
 2. ALWAYS SELECT VCS -> UPDATE PROJECT BEFORE BEGINNING WORK ON CODE AS WELL AS BEFORE MAKING A COMMIT TO AVOID CODE CONFLICTS
 3. ALWAYS SELECT VCS -> UPDATE PROJECT BEFORE BEGINNING WORK ON CODE AS WELL AS BEFORE MAKING A COMMIT TO AVOID CODE CONFLICTS
