@@ -13,7 +13,8 @@ I ADDED A .gitignore FILE TO EXCLUDE THESE BUT JUST IN CASE YOU NEVER WANT TO CO
 .DS_Store
 /build
 
-
+MAKE SURE YOUR ANDROID STUDIO ENVIRONMENT IS ALL SET UP WITH EVERYTHING UPDATED IN THE SDK MANAGER. REMOVE THE APIS FOR
+ANDROID N PREVIEW AND MARSHMALLOW, THIS PROJECT WAS SET UP WITH API 19 ANDROID 4.4.2.
 TO BEGIN COLLABORATING AND MAKING CHANGES TO THIS PROJECT:
 1. Download Git from https://git-scm.com/
 2. Open Android Studio
@@ -23,7 +24,8 @@ TO BEGIN COLLABORATING AND MAKING CHANGES TO THIS PROJECT:
 6. Choose a parent directory for the cloned project (Preferably a separate folder from your main AndroidStudio project
 directory folder such as AndroidStudioGithub for example)
 7. Clone and open project
-8. If it throws errors of "cannot load modules" click the error details and remove the selected two .iml files
+8. If it throws errors of "cannot load modules" click the error details and remove the selected two .iml files, ignore
+  about a "vcs root."
 9. In your left project window view, the app files should now be available.
 
 TO MAKE FIRST TEST COMMMIT
