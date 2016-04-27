@@ -34,10 +34,11 @@ TO BEGIN COLLABORATING AND MAKING CHANGES TO THIS PROJECT:
 6. Choose a parent directory for the cloned project (Preferably a separate folder from your main AndroidStudio project
 directory folder such as AndroidStudioGithub for example)
 7. Clone and open project
-8. If it throws errors of "cannot load modules" click the error details and remove the selected two .iml files (ignore
-   messages about an "unregistered vcs root"). Link for image of missing modules error: https://www.dropbox.com/s/6v6joohbib386pj/Error%20cannot%20load%20modules.png?dl=0
-9. In your left project window view, the app files should now be available.
-10. IF ANDROID STUDIO ASKS IF YOU WANT TO ADD A .IDEA\VCS.XML FILE TO GIT WHILE WORKING ON THE PROJECT
+8. If it throws errors of "cannot load modules" Link for image of missing modules error:           https://www.dropbox.com/s/6v6joohbib386pj/Error%20cannot%20load%20modules.png?dl=0
+9. If you see a message stating "Unregistered VCS root" click add on the pop up or if it vanishes to quickly, open the event
+   log in the bottom right corner to add the root.
+10. In your left project window view, the app files should now be available.
+11. IF ANDROID STUDIO ASKS IF YOU WANT TO ADD A .IDEA\VCS.XML FILE TO GIT WHILE WORKING ON THE PROJECT
 SELECT NO AND TO NOT ASK AGAIN. .IDEA\VCS.XML FILES ARE IDE DEPENDENT AND ADDING THEM TO GITHUB WILL CAUSE FILE CONFLICTS.
 
 TO MAKE FIRST TEST COMMMIT
