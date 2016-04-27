@@ -28,7 +28,7 @@ public class MainActivity extends AppCompatActivity {
         tv.setText("Upload to database GUI to be implemented.");
     }
     public void listView(View view) {
-        Intent intent = new Intent(this, MainActivityDisplayDatabase.class);
+        Intent intent = new Intent(this, ActivityDisplayRecipe.class);
         startActivity(intent);
         /*
 
