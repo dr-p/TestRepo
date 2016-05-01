@@ -8,9 +8,6 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    /**
-     * ?Does any changes I make show up?
-     */
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
