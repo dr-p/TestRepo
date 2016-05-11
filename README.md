@@ -45,7 +45,7 @@ TO MAKE FIRST TEST COMMMIT
 1. ALWAYS SELECT VCS -> UPDATE PROJECT BEFORE BEGINNING WORK ON CODE AS WELL AS BEFORE MAKING A COMMIT TO AVOID CODE CONFLICTS
 2. ALWAYS SELECT VCS -> UPDATE PROJECT BEFORE BEGINNING WORK ON CODE AS WELL AS BEFORE MAKING A COMMIT TO AVOID CODE CONFLICTS
 3. ALWAYS SELECT VCS -> UPDATE PROJECT BEFORE BEGINNING WORK ON CODE AS WELL AS BEFORE MAKING A COMMIT TO AVOID CODE CONFLICTS
-4. Right click on app in project window and select "Git" -> "+ Add"
+4. Right click on app in project window and select "Git" -> "+ Add" *THIS STEP MUST BE DONE EACH TIME A NEW FILE IS ADDED TO PROJECT*
 5. Open MainActivity.java in app->java->com.killer.recipes.allrecipekillerapp (the first one, not androidTest or Test)
 6. Make a random commmit such as a //comment in the file somewhere that won't drastically effect the code
 7. Select VCS from the top menu bar and choose Commit Changes
