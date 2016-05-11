@@ -24,7 +24,7 @@ TO BEGIN COLLABORATING AND MAKING CHANGES TO THIS PROJECT:
 6. Choose a parent directory for the cloned project (Preferably a separate folder from your main AndroidStudio project
 directory folder such as AndroidStudioGithub for example)
 7. Clone and open project
-8. If it throws errors of "cannot load modules" Link for image of missing modules error:           https://www.dropbox.com/s/6v6joohbib386pj/Error%20cannot%20load%20modules.png?dl=0
+8. If it throws errors of "cannot load modules" Link for image of missing modules error:  https://www.dropbox.com/s/6v6joohbib386pj/Error%20cannot%20load%20modules.png?dl=0
 9. If you see a message stating "Unregistered VCS root" click add on the pop up or if it vanishes to quickly, open the event
    log in the bottom right corner to add the root.
 10. In your left project window view, the app files should now be available.
