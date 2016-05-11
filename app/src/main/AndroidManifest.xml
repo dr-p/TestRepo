@@ -29,7 +29,9 @@
             android:value="@integer/google_play_services_version" />
 
         <activity android:name=".ListViewActivity" />
-        <activity android:name=".CreateNewRecipeActivity"></activity>
+        <activity android:name=".CreateNewRecipeActivity" />
+        <activity android:name=".TitleSearchActivity" />
+        <activity android:name=".IngredientSearchActivity"></activity>
     </application>
 
 </manifest>
