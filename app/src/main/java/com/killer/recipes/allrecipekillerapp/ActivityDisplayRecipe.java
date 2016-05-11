@@ -14,6 +14,8 @@ public class ActivityDisplayRecipe extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_display_recipe);
 
+
+        /* Code to get data out of the bundle passed from main activity */
         Bundle bun = getIntent().getExtras();
         TextView title = (TextView)findViewById(R.id.titleTextView);
         TextView description = (TextView)findViewById(R.id.descriptionTextView);
