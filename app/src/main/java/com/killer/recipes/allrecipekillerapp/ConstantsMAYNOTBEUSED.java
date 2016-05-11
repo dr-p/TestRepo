@@ -3,7 +3,7 @@ package com.killer.recipes.allrecipekillerapp;
 /**
  * Created by Christopher on 4/18/2016.
  */
-public class Constants {
+public class ConstantsMAYNOTBEUSED {
     public static final String RECIPE_LIST_FILE = "recipelist.json";
     public static final String RECIPE_NAME_TO_LOAD = "recipe_name";
 

@@ -8,31 +8,40 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
 
+
 import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 
+import java.io.Serializable;
+
+
 public class MainActivity extends AppCompatActivity {
     // yes finally
 
+    /* STEVEN */
     Button ingSearch;
     Button titleSearch;
     Button displayAll;
     Button upload;
+    RecipeDatabase model = new RecipeDatabase();
 
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
     private GoogleApiClient client;
-
+    /* STEVEN */
 
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
+        
+
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        /* STEVEN */
         ingSearch =  (Button) findViewById(R.id.button);
         titleSearch = (Button) findViewById(R.id.button4);
         upload = (Button) findViewById(R.id.button2);
@@ -42,7 +51,7 @@ public class MainActivity extends AppCompatActivity {
         ingSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                startActivity(new Intent(MainActivity.this,IngredientSearch.class));
+                //startActivity(new Intent(MainActivity.this,IngredientSearch.class)); to be implemented
             }
         });
 
@@ -72,14 +81,24 @@ public class MainActivity extends AppCompatActivity {
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
+        /* STEVEN */
+    }
+
+    public void callRecipeView(View view) {
+        Intent intent = new Intent(getApplicationContext(), ActivityDisplayRecipe.class);
+        Bundle bun = new Bundle();
+        bun.putString("title", model.getTitle());
+        bun.putString("description", model.getDescription());
+        intent.putExtras(bun);
+        startActivity(intent);
     }
 
     public void setTextViewMainDatabase(View view) {
-        RecipeService serv = new RecipeService();
+        RecipeServiceMAYNOTBEUSED serv = new RecipeServiceMAYNOTBEUSED();
         for (int i = 0; i < 9999; i++) {
-            serv.addRecipe(new RecipeServiceNode(new Recipe()));
+            serv.addRecipe(new RecipeServiceNodeMAYNOTBEUSED(new RecipeMAYNOTBEUSED()));
         }
-        //String numberRecipes = String.valueOf((new RecipeService()).count());
+        //String numberRecipes = String.valueOf((new RecipeServiceMAYNOTBEUSED()).count());
 
         TextView tv = (TextView) findViewById(R.id.textView);
         tv.setText(String.valueOf(serv.getNumRecipes()));
@@ -91,13 +110,13 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void listView(View view) {
+
         Intent intent = new Intent(this, ActivityDisplayRecipe.class);
         startActivity(intent);
-        /*
-
-         */
     }
 
+
+    /* STEVEN */
     @Override
     public void onStart() {
         super.onStart();
@@ -136,5 +155,6 @@ public class MainActivity extends AppCompatActivity {
         );
         AppIndex.AppIndexApi.end(client, viewAction);
         client.disconnect();
+        /* STEVEN */
     }
 }

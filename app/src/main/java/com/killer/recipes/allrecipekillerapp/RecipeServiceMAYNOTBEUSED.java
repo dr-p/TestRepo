@@ -3,11 +3,11 @@ package com.killer.recipes.allrecipekillerapp;
 /**
  * Created by Christopher on 4/18/2016.
  */
-public class RecipeService {
-    RecipeServiceNode root;
+public class RecipeServiceMAYNOTBEUSED {
+    RecipeServiceNodeMAYNOTBEUSED root;
     private int numRecipes;
 
-    public RecipeService() {
+    public RecipeServiceMAYNOTBEUSED() {
         root = null;
         numRecipes = 0;
     }
@@ -19,9 +19,9 @@ public class RecipeService {
     public int getNumRecipes() {
         return numRecipes;
     }
-    public void addRecipe(RecipeServiceNode a)
+    public void addRecipe(RecipeServiceNodeMAYNOTBEUSED a)
     {
-        RecipeServiceNode newNode = new RecipeServiceNode(a.data);
+        RecipeServiceNodeMAYNOTBEUSED newNode = new RecipeServiceNodeMAYNOTBEUSED(a.data);
         newNode.left = null;
         newNode.right = null;
         if (root == null)
@@ -32,7 +32,7 @@ public class RecipeService {
     }
 
     /* To add node, recursive helper method */
-    private void addNode(RecipeServiceNode newRecipe, RecipeServiceNode node) {
+    private void addNode(RecipeServiceNodeMAYNOTBEUSED newRecipe, RecipeServiceNodeMAYNOTBEUSED node) {
         if (newRecipe.data.getName().compareTo(node.data.getName()) < 0) {
             if (node.left == null)
                 node.left = newRecipe;
@@ -48,15 +48,15 @@ public class RecipeService {
     }
 
 
-    public RecipeServiceNode getRecipeServiceNode(String target)
+    public RecipeServiceNodeMAYNOTBEUSED getRecipeServiceNode(String target)
     {
         return searchTree(target, root);
     }
 
 
 
-    private RecipeServiceNode searchTree(String recTarget, RecipeServiceNode rootNode) {
-        RecipeServiceNode result;
+    private RecipeServiceNodeMAYNOTBEUSED searchTree(String recTarget, RecipeServiceNodeMAYNOTBEUSED rootNode) {
+        RecipeServiceNodeMAYNOTBEUSED result;
         if (rootNode == null || rootNode.data.getName().compareTo(recTarget)  == 0)
             return rootNode;
         else if (rootNode.data.getName().compareTo(recTarget) > 0)
@@ -79,7 +79,7 @@ public class RecipeService {
 
         /* recursive helper method traversing and counting elements */
 
-    private int countElements(int num, RecipeServiceNode base) {
+    private int countElements(int num, RecipeServiceNodeMAYNOTBEUSED base) {
         int result;
         if (base == null)
             return num;
@@ -96,7 +96,7 @@ public class RecipeService {
     {
         printTree(root);
     }
-    public  void printTree(RecipeServiceNode base) {
+    public  void printTree(RecipeServiceNodeMAYNOTBEUSED base) {
         if (base == null) {
             return;
         }
@@ -109,7 +109,7 @@ public class RecipeService {
     {
         printTreeReverse(root);
     }
-    public static void printTreeReverse(RecipeServiceNode base) {
+    public static void printTreeReverse(RecipeServiceNodeMAYNOTBEUSED base) {
         if (base == null) {
             return;
         }
@@ -121,7 +121,7 @@ public class RecipeService {
         return getTreeHeight(root);
     }
 
-    private int getTreeHeight(RecipeServiceNode rootNode) {
+    private int getTreeHeight(RecipeServiceNodeMAYNOTBEUSED rootNode) {
         if (rootNode == null)
             return -1;
 
@@ -134,11 +134,11 @@ public class RecipeService {
             return right + 1;
     }
 
-    public RecipeServiceNode removeNode(Recipe targetNum) {
+    public RecipeServiceNodeMAYNOTBEUSED removeNode(RecipeMAYNOTBEUSED targetNum) {
         return remove(targetNum, root);
     }
 
-    private RecipeServiceNode remove( Recipe target, RecipeServiceNode rootTemp )
+    private RecipeServiceNodeMAYNOTBEUSED remove(RecipeMAYNOTBEUSED target, RecipeServiceNodeMAYNOTBEUSED rootTemp )
     {
         if( rootTemp == null )
             return rootTemp;   // Item not found; do nothing
@@ -156,7 +156,7 @@ public class RecipeService {
         numRecipes--;
         return rootTemp;
     }
-    private RecipeServiceNode findMin( RecipeServiceNode targetToCheck )
+    private RecipeServiceNodeMAYNOTBEUSED findMin(RecipeServiceNodeMAYNOTBEUSED targetToCheck )
     {
         if( targetToCheck == null )
             return null;
