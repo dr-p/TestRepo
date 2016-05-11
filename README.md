@@ -5,8 +5,8 @@ https://raw.githubusercontent.com/dr-p/AllrecipeKillerApp/master/README.md
 
 
 VERY IMPORTANT READ TWICE
-IF ANDROID STUDIO ASKS IF YOU WANT TO ADD A .IDEA\VCS.XML FILE TO GIT WHILE WORKING ON THE PROJECT
-SELECT NO AND TO NOT ASK AGAIN. .IDEA\VCS.XML FILES ARE IDE DEPENDENT AND ADDING THEM TO GITHUB WILL CAUSE FILE CONFLICTS.
+If Android Studio asks if you want to add a .idea\vcs.xml file to git while working on the project at anytime
+select "no" and "do not ask again." .idea\vcs.xml files are IDE dependent and adding them to git may cause conflicts for others.
 
 
 Make sure your Android Studio environment is set up with everything updated in the SDK manager. Check these three links
