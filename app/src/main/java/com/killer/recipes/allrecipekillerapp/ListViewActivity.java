@@ -20,6 +20,7 @@ public class ListViewActivity extends AppCompatActivity {
         recipesListView.setAdapter(new RecipeDataSourceAdapter(this.getApplicationContext(), this.myDs));
     }
 
+
     public void callRecipeView(View view) {
         Intent intent = new Intent(getApplicationContext(), ActivityDisplayRecipe.class);
         Bundle bun = new Bundle();

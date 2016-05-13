@@ -16,7 +16,6 @@
         android:layout_height="wrap_content"
         android:id="@+id/listView"
         android:layout_alignParentTop="true"
-        android:layout_alignParentBottom="true"
-        android:onClick="callRecipeView" />
+        android:layout_alignParentBottom="true" />
     <!--Manisha-->
 </RelativeLayout>
