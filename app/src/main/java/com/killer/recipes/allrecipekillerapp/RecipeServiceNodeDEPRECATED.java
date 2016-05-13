@@ -3,14 +3,14 @@ package com.killer.recipes.allrecipekillerapp;
 /**
  * Created by Christopher on 4/18/2016.
  */
-public class RecipeServiceNodeMAYNOTBEUSED {
-    public RecipeMAYNOTBEUSED data;
+public class RecipeServiceNodeDEPRECATED {
+    public RecipeDEPRECATED data;
 
     // these variables allow this class to act as a tree node
-    public RecipeServiceNodeMAYNOTBEUSED left;
-    public RecipeServiceNodeMAYNOTBEUSED right;
+    public RecipeServiceNodeDEPRECATED left;
+    public RecipeServiceNodeDEPRECATED right;
 
-    public RecipeServiceNodeMAYNOTBEUSED(RecipeMAYNOTBEUSED rec)
+    public RecipeServiceNodeDEPRECATED(RecipeDEPRECATED rec)
     {
         this.data = rec;
     }

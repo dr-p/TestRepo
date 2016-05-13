@@ -3,12 +3,12 @@ package com.killer.recipes.allrecipekillerapp;
 /**
  * Created by Christopher on 4/18/2016.
  */
-public class IngredientMAYNOTBEUSED {
+public class IngredientDEPRECATED {
     private String name;
     private String description;
     private int quantityNeeded;
 
-    public IngredientMAYNOTBEUSED() {
+    public IngredientDEPRECATED() {
 
     }
 

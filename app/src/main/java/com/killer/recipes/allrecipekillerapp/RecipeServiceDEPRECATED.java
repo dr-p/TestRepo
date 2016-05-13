@@ -3,11 +3,11 @@ package com.killer.recipes.allrecipekillerapp;
 /**
  * Created by Christopher on 4/18/2016.
  */
-public class RecipeServiceMAYNOTBEUSED {
-    RecipeServiceNodeMAYNOTBEUSED root;
+public class RecipeServiceDEPRECATED {
+    RecipeServiceNodeDEPRECATED root;
     private int numRecipes;
 
-    public RecipeServiceMAYNOTBEUSED() {
+    public RecipeServiceDEPRECATED() {
         root = null;
         numRecipes = 0;
     }
@@ -19,9 +19,9 @@ public class RecipeServiceMAYNOTBEUSED {
     public int getNumRecipes() {
         return numRecipes;
     }
-    public void addRecipe(RecipeServiceNodeMAYNOTBEUSED a)
+    public void addRecipe(RecipeServiceNodeDEPRECATED a)
     {
-        RecipeServiceNodeMAYNOTBEUSED newNode = new RecipeServiceNodeMAYNOTBEUSED(a.data);
+        RecipeServiceNodeDEPRECATED newNode = new RecipeServiceNodeDEPRECATED(a.data);
         newNode.left = null;
         newNode.right = null;
         if (root == null)
@@ -32,7 +32,7 @@ public class RecipeServiceMAYNOTBEUSED {
     }
 
     /* To add node, recursive helper method */
-    private void addNode(RecipeServiceNodeMAYNOTBEUSED newRecipe, RecipeServiceNodeMAYNOTBEUSED node) {
+    private void addNode(RecipeServiceNodeDEPRECATED newRecipe, RecipeServiceNodeDEPRECATED node) {
         if (newRecipe.data.getName().compareTo(node.data.getName()) < 0) {
             if (node.left == null)
                 node.left = newRecipe;
@@ -48,15 +48,15 @@ public class RecipeServiceMAYNOTBEUSED {
     }
 
 
-    public RecipeServiceNodeMAYNOTBEUSED getRecipeServiceNode(String target)
+    public RecipeServiceNodeDEPRECATED getRecipeServiceNode(String target)
     {
         return searchTree(target, root);
     }
 
 
 
-    private RecipeServiceNodeMAYNOTBEUSED searchTree(String recTarget, RecipeServiceNodeMAYNOTBEUSED rootNode) {
-        RecipeServiceNodeMAYNOTBEUSED result;
+    private RecipeServiceNodeDEPRECATED searchTree(String recTarget, RecipeServiceNodeDEPRECATED rootNode) {
+        RecipeServiceNodeDEPRECATED result;
         if (rootNode == null || rootNode.data.getName().compareTo(recTarget)  == 0)
             return rootNode;
         else if (rootNode.data.getName().compareTo(recTarget) > 0)
@@ -79,7 +79,7 @@ public class RecipeServiceMAYNOTBEUSED {
 
         /* recursive helper method traversing and counting elements */
 
-    private int countElements(int num, RecipeServiceNodeMAYNOTBEUSED base) {
+    private int countElements(int num, RecipeServiceNodeDEPRECATED base) {
         int result;
         if (base == null)
             return num;
@@ -96,7 +96,7 @@ public class RecipeServiceMAYNOTBEUSED {
     {
         printTree(root);
     }
-    public  void printTree(RecipeServiceNodeMAYNOTBEUSED base) {
+    public  void printTree(RecipeServiceNodeDEPRECATED base) {
         if (base == null) {
             return;
         }
@@ -109,7 +109,7 @@ public class RecipeServiceMAYNOTBEUSED {
     {
         printTreeReverse(root);
     }
-    public static void printTreeReverse(RecipeServiceNodeMAYNOTBEUSED base) {
+    public static void printTreeReverse(RecipeServiceNodeDEPRECATED base) {
         if (base == null) {
             return;
         }
@@ -121,7 +121,7 @@ public class RecipeServiceMAYNOTBEUSED {
         return getTreeHeight(root);
     }
 
-    private int getTreeHeight(RecipeServiceNodeMAYNOTBEUSED rootNode) {
+    private int getTreeHeight(RecipeServiceNodeDEPRECATED rootNode) {
         if (rootNode == null)
             return -1;
 
@@ -134,11 +134,11 @@ public class RecipeServiceMAYNOTBEUSED {
             return right + 1;
     }
 
-    public RecipeServiceNodeMAYNOTBEUSED removeNode(RecipeMAYNOTBEUSED targetNum) {
+    public RecipeServiceNodeDEPRECATED removeNode(RecipeDEPRECATED targetNum) {
         return remove(targetNum, root);
     }
 
-    private RecipeServiceNodeMAYNOTBEUSED remove(RecipeMAYNOTBEUSED target, RecipeServiceNodeMAYNOTBEUSED rootTemp )
+    private RecipeServiceNodeDEPRECATED remove(RecipeDEPRECATED target, RecipeServiceNodeDEPRECATED rootTemp )
     {
         if( rootTemp == null )
             return rootTemp;   // Item not found; do nothing
@@ -156,7 +156,7 @@ public class RecipeServiceMAYNOTBEUSED {
         numRecipes--;
         return rootTemp;
     }
-    private RecipeServiceNodeMAYNOTBEUSED findMin(RecipeServiceNodeMAYNOTBEUSED targetToCheck )
+    private RecipeServiceNodeDEPRECATED findMin(RecipeServiceNodeDEPRECATED targetToCheck )
     {
         if( targetToCheck == null )
             return null;

@@ -15,8 +15,6 @@ import com.google.android.gms.appindexing.Action;
 import com.google.android.gms.appindexing.AppIndex;
 import com.google.android.gms.common.api.GoogleApiClient;
 
-import java.io.Serializable;
-
 
 public class MainActivity extends AppCompatActivity {
     private RecipeDataSource myDs;
@@ -40,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     Button titleSearch;
     Button displayAll;
     Button upload;
-    RecipeDatabase model = new RecipeDatabase();
+    RecipeDatabaseDEPRECATED model = new RecipeDatabaseDEPRECATED();
 
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -62,7 +60,7 @@ public class MainActivity extends AppCompatActivity {
         ingredientsView = (TextView) findViewById(R.id.txtitem);
         //title = (TextView) findViewById(R.id.textView1);
         //ingredient = (TextView) findViewById(R.id.textView2);
-        //recipe = (TextView) findViewById(R.id.textView3);
+        //activity_recipe_search_result = (TextView) findViewById(R.id.textView3);
         if (editText1 != null && editText2!=null && editText3 != null && editText4 != null) {
             Ing1 = editText1.getText().toString();
             Ing2 = editText2.getText().toString();
@@ -76,7 +74,7 @@ public class MainActivity extends AppCompatActivity {
 
         //title.setText("1");
         //ingredient.setText("2");
-        //recipe.setText("3");
+        //activity_recipe_search_result.setText("3");
 
 
 
@@ -151,11 +149,11 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void setTextViewMainDatabase(View view) {
-        RecipeServiceMAYNOTBEUSED serv = new RecipeServiceMAYNOTBEUSED();
+        RecipeServiceDEPRECATED serv = new RecipeServiceDEPRECATED();
         for (int i = 0; i < 9999; i++) {
-            serv.addRecipe(new RecipeServiceNodeMAYNOTBEUSED(new RecipeMAYNOTBEUSED()));
+            serv.addRecipe(new RecipeServiceNodeDEPRECATED(new RecipeDEPRECATED()));
         }
-        //String numberRecipes = String.valueOf((new RecipeServiceMAYNOTBEUSED()).count());
+        //String numberRecipes = String.valueOf((new RecipeServiceDEPRECATED()).count());
 
         //TextView tv = (TextView) findViewById(R.id.textView);
         //tv.setText(String.valueOf(serv.getNumRecipes()));

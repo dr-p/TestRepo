@@ -12,10 +12,10 @@ import android.util.Log;
 /**
  * Created by vidushikapoor on 5/6/16.
  */
-public class display extends Activity {
+public class Display extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.recipe);
+        setContentView(R.layout.activity_recipe_search_result);
         String A = getIntent().getStringExtra("Ingredient1");
         String B = getIntent().getStringExtra("Ingredient2");
         String C = getIntent().getStringExtra("Ingredient3");
@@ -59,7 +59,7 @@ public class display extends Activity {
             recipePrint.setText(Arrays.toString(recipe5));
         }
         else {
-            String message = "No recipe found";
+            String message = "No activity_recipe_search_result found";
             TextView recipePrint = (TextView) findViewById(R.id.Recipe);
             recipePrint.setText(message);
         }
@@ -122,7 +122,7 @@ public class display extends Activity {
             TextView recipePrint = (TextView) findViewById(R.id.Recipe);
             recipePrint.setText(Arrays.toString(recipe5));
         } else {
-            String message = "No recipe found";
+            String message = "No activity_recipe_search_result found";
             TextView recipePrint = (TextView) findViewById(R.id.Recipe);
             recipePrint.setText(message);
         } To Here

@@ -4,7 +4,7 @@ import java.util.ArrayList;
 
 public class RecipeDataSource {
     /**
-     * Create 3 array lists. 1 for recipe titles, 1 for recipe descriptions, 1 for recipe images
+     * Create 3 array lists. 1 for activity_recipe_search_result titles, 1 for activity_recipe_search_result descriptions, 1 for activity_recipe_search_result images
      */
     private ArrayList<Integer> photoPool;
     private ArrayList<Integer> descriptionPool;
@@ -13,21 +13,21 @@ public class RecipeDataSource {
     private ArrayList<Integer> ingredientPool;
 
     /**
-     * @return the photoPool the photo pool of recipe images
+     * @return the photoPool the photo pool of activity_recipe_search_result images
      */
     public ArrayList<Integer> getPhotoPool() {
         return photoPool;
     }
 
     /**
-     * @return the descriptionPool the description pool of recipe descriptions
+     * @return the descriptionPool the description pool of activity_recipe_search_result descriptions
      */
     public ArrayList<Integer> getDescriptionPool() {
         return descriptionPool;
     }
 
     /**
-     * @return the recipePool the recipe pool of recipes
+     * @return the recipePool the activity_recipe_search_result pool of recipes
      */
     public ArrayList<Integer> getRecipePool() {
         return recipePool;
