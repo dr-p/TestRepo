@@ -81,7 +81,14 @@ public class MainActivity extends AppCompatActivity {
 
 
         /* VIDUSHI */
+        final Button button = (Button) findViewById(R.id.button);
+        button.setOnClickListener(new View.OnClickListener() {
+            public void onClick(View v) {
 
+                Intent i = new Intent(MainActivity.this, com.killer.recipes.allrecipekillerapp.IngredientSearchActivity.class);
+                startActivity(i);
+            }
+        });
         /* MANISHA */
         myDs = new RecipeDataSource();
         recipesListView = (ListView)findViewById(R.id.listView);

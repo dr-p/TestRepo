@@ -32,6 +32,7 @@
         <activity android:name=".CreateNewRecipeActivity" />
         <activity android:name=".TitleSearchActivity" />
         <activity android:name=".IngredientSearchActivity"></activity>
+        <activity android:name=".display"></activity>
     </application>
 
 </manifest>
