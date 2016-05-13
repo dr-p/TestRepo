@@ -148,6 +148,7 @@ public class MainActivity extends AppCompatActivity {
         startActivity(intent);
     }
 
+    /* DEPRECATED METHOD NOT NEEDED ANYMORE
     public void setTextViewMainDatabase(View view) {
         RecipeServiceDEPRECATED serv = new RecipeServiceDEPRECATED();
         for (int i = 0; i < 9999; i++) {
@@ -157,7 +158,7 @@ public class MainActivity extends AppCompatActivity {
 
         //TextView tv = (TextView) findViewById(R.id.textView);
         //tv.setText(String.valueOf(serv.getNumRecipes()));
-    }
+    }*/
 
     public void setTextViewMainUpload(View view) {
         //TextView tv = (TextView) findViewById(R.id.textView);
