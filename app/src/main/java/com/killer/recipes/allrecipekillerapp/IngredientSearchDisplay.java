@@ -12,7 +12,7 @@ import android.util.Log;
 /**
  * Created by vidushikapoor on 5/6/16.
  */
-public class Display extends Activity {
+public class IngredientSearchDisplay extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipe_search_result);
