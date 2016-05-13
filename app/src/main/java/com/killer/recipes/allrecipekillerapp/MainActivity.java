@@ -19,7 +19,7 @@ import java.io.Serializable;
 
 
 public class MainActivity extends AppCompatActivity {
-    private RecipeDataSource myDs;
+    //private RecipeDataSource myDs;
     private ListView recipesListView;
 
 
@@ -90,9 +90,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         /* MANISHA */
-        myDs = new RecipeDataSource();
+        //myDs = new RecipeDataSource();
         recipesListView = (ListView)findViewById(R.id.listView);
-        recipesListView.setAdapter(new RecipeDataSourceAdapter(this.getApplicationContext(), this.myDs));
+        //recipesListView.setAdapter(new RecipeDataSourceAdapter(this.getApplicationContext(), this.myDs));
         /* MANISHA */
 
         /* STEVEN */
@@ -156,13 +156,13 @@ public class MainActivity extends AppCompatActivity {
         }
         //String numberRecipes = String.valueOf((new RecipeServiceMAYNOTBEUSED()).count());
 
-        TextView tv = (TextView) findViewById(R.id.textView);
-        tv.setText(String.valueOf(serv.getNumRecipes()));
+        //TextView tv = (TextView) findViewById(R.id.textView);
+        //tv.setText(String.valueOf(serv.getNumRecipes()));
     }
 
     public void setTextViewMainUpload(View view) {
-        TextView tv = (TextView) findViewById(R.id.textView);
-        tv.setText("Upload to database GUI to be implemented.");
+        //TextView tv = (TextView) findViewById(R.id.textView);
+        //tv.setText("Upload to database GUI to be implemented.");
     }
 
     public void listView(View view) {
@@ -239,7 +239,7 @@ public class MainActivity extends AppCompatActivity {
             if (editText4 != null) {
                 IngD = editText4.getText().toString();
             }
-            Intent i = new Intent(MainActivity.this, com.killer.recipes.allrecipekillerapp.display.class);
+            Intent i = new Intent(MainActivity.this, com.killer.recipes.allrecipekillerapp.ActivityDisplayRecipe.class);
             i.putExtra("Ingredient1", IngA);
             i.putExtra("Ingredient2", IngB);
             i.putExtra("Ingredient3", IngC);
