@@ -44,8 +44,27 @@
 
     <string name="ingredient1">1 tablespoon butter, 1/2 cup diced carrot, 1/2 cup diced onion, 1/2 cup
     diced celery, 1 pinch salt, 1/4 teaspoon thyme leaves, 2 tablespoons melted chicken fat, 2 quarts
-    roasted chicken broth</string>
+    roasted chicken broth, 4 ounces uncooked noodles, 1 pinch cayenne pepper, 1 pinch salt and ground
+    pepper</string>
+    <string name="ingredient2">1 chopped onion, 1/4 cup olive oil, 2 diced carrots, 2 stlks of celery
+    chopped, 2 minced cloves of garlic, 1 teaspoon of dried oregano, 1 bay leaf, 1 teaspoon of dried
+    basil, 1 can crushed tomatoes, 2 cups dry lentils, 8 cups water, 1/2 cup sliced spinach, 2
+    tablespoons vinegar, salt, ground pepper</string>
+    <string name="ingredient3"></string>
 
+
+    <string name="instruction1">Melt butter in a large soup pot over medium heat. Stir in carrot,
+        onion, celery, salt, and fresh thyme. Stir in chicken fat; cook and stir until the onions
+        turn soft and translucent, 5 to 6 minutes. Stir in roasted chicken broth and bring to a boil.
+     Season to taste with salt, if necessary; stir in noodles and cook until tender, about 5 minutes.
+     Stir in cooked chicken breast meat and simmer until heated through, about 5 minutes. Season with
+        cayenne pepper, salt and black pepper to taste.</string>
+    <string name="instruction2">In a large soup pot, heat oil over medium heat. Add onions, carrots,
+        and celery; cook and stir until onion is tender. Stir in garlic, bay leaf, oregano, and
+        basil; cook for 2 minutes. Stir in lentils, and add water and tomatoes. Bring to a boil.
+        Reduce heat, and simmer for at least 1 hour. When ready to serve stir in spinach, and cook
+        until it wilts. Stir in vinegar, and season to taste with salt and pepper, and more vinegar
+        if desired.</string>
 
     <string name="action_settings">Settings</string>
     <string name="emptyString" />

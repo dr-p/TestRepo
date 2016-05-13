@@ -105,10 +105,14 @@ public class RecipeDataSource {
     }
 
     public void setupInstructionPool() {
-
+        instructionPool.add(R.string.instruction1);
+        instructionPool.add(R.string.instruction2);
     }
 
     public void setupIngredientPool() {
+        ingredientPool.add(R.string.ingredient1);
+        ingredientPool.add(R.string.ingredient2);
+        ingredientPool.add(R.string.ingredient3);
 
     }
 
