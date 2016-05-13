@@ -107,13 +107,33 @@ public class RecipeDataSource {
     public void setupInstructionPool() {
         instructionPool.add(R.string.instruction1);
         instructionPool.add(R.string.instruction2);
+        instructionPool.add(R.string.instruction3);
+        instructionPool.add(R.string.instruction4);
+        instructionPool.add(R.string.instruction5);
+        instructionPool.add(R.string.instruction6);
+        instructionPool.add(R.string.instruction4);
+        instructionPool.add(R.string.instruction4);
+        instructionPool.add(R.string.instruction4);
+        instructionPool.add(R.string.instruction4);
+        instructionPool.add(R.string.instruction4);
+        instructionPool.add(R.string.instruction4);
+        instructionPool.add(R.string.instruction4);
     }
 
     public void setupIngredientPool() {
         ingredientPool.add(R.string.ingredient1);
         ingredientPool.add(R.string.ingredient2);
         ingredientPool.add(R.string.ingredient3);
-
+        ingredientPool.add(R.string.ingredient4);
+        ingredientPool.add(R.string.ingredient5);
+        ingredientPool.add(R.string.ingredient6);
+        ingredientPool.add(R.string.ingredient4);
+        ingredientPool.add(R.string.ingredient4);
+        ingredientPool.add(R.string.ingredient4);
+        ingredientPool.add(R.string.ingredient4);
+        ingredientPool.add(R.string.ingredient4);
+        ingredientPool.add(R.string.ingredient4);
+        ingredientPool.add(R.string.ingredient4);
     }
 
     public int getDataSourceLength() {
