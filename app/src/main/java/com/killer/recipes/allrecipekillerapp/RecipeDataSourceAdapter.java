@@ -39,9 +39,12 @@ public class RecipeDataSourceAdapter extends BaseAdapter {
     }
 
     @Override
-    public Object getItem(int arg0) {
-        return null;
+    public Object getItem(int i) {
+        return myDataSource;
     }
+
+
+
 
     @Override
     public long getItemId(int position) {
