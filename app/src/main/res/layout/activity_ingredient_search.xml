@@ -9,4 +9,54 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.killer.recipes.allrecipekillerapp.IngredientSearchActivity">
 
+    <!--Vidushi-->
+    <TextView
+        android:id="@+id/txtitem"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText1"
+        android:hint="Ingredient 1"
+        android:imeOptions="actionSend"
+        android:inputType="text" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText2"
+        android:hint="Ingredient2"
+        android:layout_gravity="center_horizontal"
+        android:imeOptions="actionSend"
+        android:inputType="text" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText3"
+        android:hint="Ingredient3"
+        android:imeOptions="actionSend"
+        android:inputType="text" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/editText4"
+        android:hint="Ingredient4"
+        android:imeOptions="actionSend"
+        android:inputType="text" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:id="@+id/button5"
+        android:layout_gravity="center_horizontal"
+        android:clickable="true"
+        android:onClick="buttonOnCLick"
+        android:longClickable="true" />
+
 </RelativeLayout>

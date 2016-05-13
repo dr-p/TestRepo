@@ -9,6 +9,16 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.killer.recipes.allrecipekillerapp.MainActivity">
 
+
+<!--Manisha-->
+    <ListView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/listView"
+        android:layout_below="@+id/button"
+        android:layout_above="@+id/button2"/>
+<!--Manisha-->
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -19,6 +29,7 @@
         android:onClick="setTextViewMainDatabase"
         android:clickable="true" />
 
+
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -28,7 +39,7 @@
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true" />
 
-    <TextView
+    <!--<TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Make selection above"
@@ -37,8 +48,9 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="140dp"
         android:textSize="20dp" />
+        -->
 
-    <Button
+    <!--<Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Display list view of databse"
@@ -47,6 +59,7 @@
         android:onClick="listView"
         android:layout_below="@+id/textView"
         android:layout_centerHorizontal="true" />
+        -->
 
     <Button
         android:layout_width="wrap_content"
@@ -58,7 +71,7 @@
         android:layout_above="@+id/textView"
         android:layout_toEndOf="@+id/button2" />
 
-    <Button
+    <!--<Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="RecipeViewTest"
@@ -67,4 +80,5 @@
         android:layout_centerHorizontal="true"
         android:layout_marginTop="35dp"
         android:onClick="callRecipeView" />
+        -->
 </RelativeLayout>

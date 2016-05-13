@@ -1,4 +1,137 @@
 <resources>
     <string name="app_name">Allrecipe Killer App</string>
     <string name="title_activity_ingredient_search">IngredientSearch</string>
+
+    <string name="recipe1">Chicken Noodle Soup</string>
+    <string name="recipe2">Lentil Soup</string>
+    <string name="recipe3">Hot Artichoke Dip</string>
+    <string name="recipe4">Guacamole</string>
+    <string name="recipe5">Crispy Edamame</string>
+    <string name="recipe6">Grilled Chicken with Lemon</string>
+    <string name="recipe7">Spinach Enchiladas</string>
+    <string name="recipe8">Vegetable Lasagna</string>
+    <string name="recipe9">Penne Pasta Salad</string>
+    <string name="recipe10">Red Lentil Curry</string>
+    <string name="recipe11">Lemon Bars</string>
+    <string name="recipe12">Strawberry Shortcake</string>
+    <string name="recipe13">Chocolate Cupcakes</string>
+    <string name="description1">Chicken Noodle Soup is a trcfraditional soup using boiled chicken, pasta,
+    carrots, peas and light herbs</string>
+    <string name="description2">Lentil Soup is made from a mixture of various lentils soaked in water
+    overnight and boiled</string>
+    <string name="description3">Hot Artichoke Dip is a dip made using Spinach, Artichokes and cream.
+    It is best eaten with chips</string>
+    <string name="description4">Guacamole is a traditional mexican dish made using Avocados, Tomatoes,
+    Onions, Cilantro, and Lime. It is best eaten with chips but can also be eaten alongside various
+    dishes</string>
+    <string name="description5">Crispy Edamame is a traditional Japanese Dish made using Edamame beans
+    and is eaten as an appetizer</string>
+    <string name="description6">Grilled Chicken with Lemon is a entre made to taste using various herbs.
+    It\'s strongest flavor is lime</string>
+    <string name="description7">If you like spinach and Mexican food, you\'ll love this dish.</string>
+    <string name="description8">Vegetable Lasagna is a pasta dish made with pasta layered on top of each
+    other with marinara sauce and various ingredients in between</string>
+    <string name="description9">Penne Pasta Salad is a cold pasta dish made using various beans, penne pasta,
+     and pesto sauce</string>
+    <string name="description10">Red Lentil Curry is a rich and hearty dish. Great as a main dish, but can
+    also be eaten as a side dish. This dish is amazing with Basmati Rice</string>
+    <string name="description11">An intensly flavored layer of lemon custard, on top of a crisp, sweet shortbread
+     crust makes these cookies almost like little slices of lemon pie.</string>
+    <string name="description12">Old fashioned Strawberry Shortcake dessert has tender homemade shortcake
+     layered with sweet strawberries and fresh whipped cream</string>
+    <string name="description13">Ready in 30 minutes, this quick dessert is great for parties.</string>
+
+
+
+
+    <string name="action_settings">Settings</string>
+    <string name="emptyString" />
+    <string name="empty2" />
+    <string name="empty3" />
+    <string name="empty4" />
+
+    <string-array name="Recipe1">
+        <item>Cucumber-Carrot Salad</item>
+        <item>vinegar</item>
+        <item>sugar</item>
+        <item>oil</item>
+        <item>ginger</item>
+        <item>salt</item>
+        <item>carrot</item>
+        <item>onion</item>
+        <item>bellpepper</item>
+        <item>cucumber</item>
+        <item>Whisk rice vinegar, sugar, vegetable oil, ginger, and salt together in a bowl until sugar and salt are dissolved into a smooth dressing. Toss carrot, green onion, bell pepper, and cucumber in the dressing to evenly coat. Cover bowl with plastic wrap and refrigerate until chilled, about 30 minutes.
+    </item>
+
+
+    </string-array>
+
+    <string-array name="Recipe2">
+        <item>Insalata Caprese with Avocado</item>
+        <item>avocados</item>
+        <item>lemon</item>
+        <item>tomatoes</item>
+        <item>basil</item>
+        <item>salt</item>
+        <item>oil</item>
+        <item>mozzarella</item>
+        <item>Combine avocados and lemon juice in a large bowl; toss to coat. Add tomato, mozzarella, and basil; toss again. Drizzle with olive oil and season with salt
+</item>
+
+
+    </string-array>
+
+    <string-array name="Recipe3">
+        <item>Light Lemon Pesto Pasta</item>
+        <item>spaghetti</item>
+        <item>cheese</item>
+        <item>garlic</item>
+        <item>spinach</item>
+        <item>basil</item>
+        <item>walnuts</item>
+        <item>lemon</item>
+        <item>salt</item>
+        <item>oil</item>
+
+        <item>Bring a large pot of lightly salted water to a boil. Cook spaghetti at a boil until cooked through but firm to the bite, about 12 minutes; drain. Transfer spaghetti to a large bowl. Put cubed Romano cheese in the bowl of a food processor; process until coarsely grated, about 30 seconds. Put garlic into the food processor and process until the cheese and garlic are combined. Add spinach, basil, walnuts, lemon juice, lemon zest, and salt; process until the mixture comes together into a thick paste. Scrape down the sides of the bowl with a spatula. With food processor running, drizzle olive oil into the mixture. Continue processing until the oil is integrated smoothly. Pour sauce over spaghetti and toss to coat
+    </item>
+
+    </string-array>
+
+    <string-array name="Recipe4">
+        <item>Mozzarella and Tomato Appetizer</item>
+        <item>tomatoes</item>
+        <item>prosciutto</item>
+        <item>mozzarella</item>
+        <item>basil</item>
+        <item>dressing</item>
+        <item>Thread each toothpick with: one tomato, 1/4 of a slice of prosciutto folded into a small square, one mozzarella ball, one basil leaf (folded if it is large), and one more tomato. Arrange appetizers on a serving platter. Drizzle with your favorite Italian salad dressing.
+</item>
+
+
+    </string-array>
+
+
+    <string-array name="Recipe5">
+        <item>Pasta with Pesto and Scallops</item>
+        <item>fettuccine</item>
+        <item>pesto</item>
+        <item>oil</item>
+        <item>onion</item>
+        <item>garlic</item>
+        <item>wine</item>
+        <item>mushroom</item>
+        <item>bellpepper</item>
+        <item>In a large pot with boiling salted water cook fettuccini pasta until al dente. Drain. Stir in pesto sauce and 2 tablespoons of olive oil. Meanwhile, in a large skillet, saute onion and garlic in 3 tablespoons olive oil until soft. Add green bell pepper, mushrooms and cook until soft, about 3 minutes. Stir in dry white wine, lemon juice, salt and pepper to taste, and bring to a boil. Add scallops and toss for 2 minutes. Take care not to overcook the scallops, as they will toughen when exposed to prolonged heat. Toss the pesto covered pasta with the scallop sauce. Sprinkle with grated Parmesan cheese. Serve immediately.
+    </item>
+
+
+
+    </string-array>
+
+
+
+
+
 </resources>
