@@ -50,10 +50,14 @@ public class RecipeDataSource {
         photoPool = new ArrayList<Integer>();
         descriptionPool = new ArrayList<Integer>();
         recipePool = new ArrayList<Integer>();
+        ingredientPool = new ArrayList<Integer>();
+        instructionPool = new ArrayList<Integer>();
         //load the array lists when you construct a RecipeDataSource
         setupPhotoPool();
         setupRecipePool();
         setupDescriptionPool();
+        setupIngredientPool();
+        setupInstructionPool();
     }
 
     public void setupPhotoPool() {
@@ -111,13 +115,13 @@ public class RecipeDataSource {
         instructionPool.add(R.string.instruction4);
         instructionPool.add(R.string.instruction5);
         instructionPool.add(R.string.instruction6);
-        instructionPool.add(R.string.instruction4);
-        instructionPool.add(R.string.instruction4);
-        instructionPool.add(R.string.instruction4);
-        instructionPool.add(R.string.instruction4);
-        instructionPool.add(R.string.instruction4);
-        instructionPool.add(R.string.instruction4);
-        instructionPool.add(R.string.instruction4);
+        instructionPool.add(R.string.instruction7);
+        instructionPool.add(R.string.instruction8);
+        instructionPool.add(R.string.instruction9);
+        instructionPool.add(R.string.instruction10);
+        instructionPool.add(R.string.instruction11);
+        instructionPool.add(R.string.instruction12);
+        instructionPool.add(R.string.instruction13);
     }
 
     public void setupIngredientPool() {
@@ -127,13 +131,13 @@ public class RecipeDataSource {
         ingredientPool.add(R.string.ingredient4);
         ingredientPool.add(R.string.ingredient5);
         ingredientPool.add(R.string.ingredient6);
-        ingredientPool.add(R.string.ingredient4);
-        ingredientPool.add(R.string.ingredient4);
-        ingredientPool.add(R.string.ingredient4);
-        ingredientPool.add(R.string.ingredient4);
-        ingredientPool.add(R.string.ingredient4);
-        ingredientPool.add(R.string.ingredient4);
-        ingredientPool.add(R.string.ingredient4);
+        ingredientPool.add(R.string.ingredient7);
+        ingredientPool.add(R.string.ingredient8);
+        ingredientPool.add(R.string.ingredient9);
+        ingredientPool.add(R.string.ingredient10);
+        ingredientPool.add(R.string.ingredient11);
+        ingredientPool.add(R.string.ingredient12);
+        ingredientPool.add(R.string.ingredient13);
     }
 
     public int getDataSourceLength() {
