@@ -19,7 +19,7 @@ import java.io.Serializable;
 
 
 public class MainActivity extends AppCompatActivity {
-    //private RecipeDataSource myDs;
+    private RecipeDataSource myDs;
     private ListView recipesListView;
 
 
@@ -90,9 +90,9 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         /* MANISHA */
-        //myDs = new RecipeDataSource();
+        myDs = new RecipeDataSource();
         recipesListView = (ListView)findViewById(R.id.listView);
-        //recipesListView.setAdapter(new RecipeDataSourceAdapter(this.getApplicationContext(), this.myDs));
+        recipesListView.setAdapter(new RecipeDataSourceAdapter(this.getApplicationContext(), this.myDs));
         /* MANISHA */
 
         /* STEVEN */
