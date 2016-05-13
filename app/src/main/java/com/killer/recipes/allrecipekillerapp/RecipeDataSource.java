@@ -9,6 +9,8 @@ public class RecipeDataSource {
     private ArrayList<Integer> photoPool;
     private ArrayList<Integer> descriptionPool;
     private ArrayList<Integer> recipePool;
+    private ArrayList<Integer> instructionPool;
+    private ArrayList<Integer> ingredientPool;
 
     /**
      * @return the photoPool the photo pool of recipe images
@@ -30,6 +32,16 @@ public class RecipeDataSource {
     public ArrayList<Integer> getRecipePool() {
         return recipePool;
     }
+
+    /**
+     * @return the instructionpool the instructions for the recipes
+     */
+    public ArrayList<Integer> getInstructionPool() { return instructionPool; }
+
+    /**
+     * @return the ingredientpool the ingredients for the recipes
+     */
+    public ArrayList<Integer> getIngredientPool() { return ingredientPool; }
 
     /**
      * Constructor
@@ -90,6 +102,14 @@ public class RecipeDataSource {
         descriptionPool.add(R.string.description11);
         descriptionPool.add(R.string.description12);
         descriptionPool.add(R.string.description13);
+    }
+
+    public void setupInstructionPool() {
+
+    }
+
+    public void setupIngredientPool() {
+
     }
 
     public int getDataSourceLength() {

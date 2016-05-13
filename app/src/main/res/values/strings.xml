@@ -15,6 +15,7 @@
     <string name="recipe11">Lemon Bars</string>
     <string name="recipe12">Strawberry Shortcake</string>
     <string name="recipe13">Chocolate Cupcakes</string>
+
     <string name="description1">Chicken Noodle Soup is a trcfraditional soup using boiled chicken, pasta,
     carrots, peas and light herbs</string>
     <string name="description2">Lentil Soup is made from a mixture of various lentils soaked in water
@@ -41,7 +42,9 @@
      layered with sweet strawberries and fresh whipped cream</string>
     <string name="description13">Ready in 30 minutes, this quick dessert is great for parties.</string>
 
-
+    <string name="ingredient1">1 tablespoon butter, 1/2 cup diced carrot, 1/2 cup diced onion, 1/2 cup
+    diced celery, 1 pinch salt, 1/4 teaspoon thyme leaves, 2 tablespoons melted chicken fat, 2 quarts
+    roasted chicken broth</string>
 
 
     <string name="action_settings">Settings</string>

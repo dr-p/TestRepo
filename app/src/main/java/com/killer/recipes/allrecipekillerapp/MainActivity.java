@@ -20,7 +20,7 @@ import java.io.Serializable;
 
 public class MainActivity extends AppCompatActivity {
     private RecipeDataSource myDs;
-    private ListView recipesListView;
+    //private ListView recipesListView;
 
 
     String[] items = new String[4];
@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
     /* STEVEN */
     Button ingSearch;
     Button titleSearch;
-    //Button displayAll;
+    Button displayAll;
     Button upload;
     RecipeDatabase model = new RecipeDatabase();
 
@@ -81,6 +81,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         /* VIDUSHI */
+        /*
         final Button button = (Button) findViewById(R.id.button);
         button.setOnClickListener(new View.OnClickListener() {
             public void onClick(View v) {
@@ -89,23 +90,21 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(i);
             }
         });
-        /* MANISHA */
+        */
         myDs = new RecipeDataSource();
-        recipesListView = (ListView)findViewById(R.id.listView);
-        recipesListView.setAdapter(new RecipeDataSourceAdapter(this.getApplicationContext(), this.myDs));
-        /* MANISHA */
+
 
         /* STEVEN */
 
         ingSearch =  (Button) findViewById(R.id.button);
         titleSearch = (Button) findViewById(R.id.button4);
         upload = (Button) findViewById(R.id.button2);
-        //displayAll = (Button) findViewById(R.id.button3);
+        displayAll = (Button) findViewById(R.id.button3);
 
         ingSearch.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //startActivity(new Intent(MainActivity.this,IngredientSearch.class)); to be implemented
+                startActivity(new Intent(MainActivity.this,IngredientSearchActivity.class)); //to be implemented
             }
         });
 
@@ -122,14 +121,16 @@ public class MainActivity extends AppCompatActivity {
                 ///startActivity(new Intent(MainActivity.this,IngredientSearch.class));
             }
         });
+        */
 
         displayAll.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
-                //startActivity(new Intent(MainActivity.this,IngredientSearch.class));
+                Intent ls = new Intent(MainActivity.this, ListViewActivity.class);
+                startActivity(ls);
             }
         });
-        */
+
 
 
         // ATTENTION: This was auto-generated to implement the App Indexing API.
