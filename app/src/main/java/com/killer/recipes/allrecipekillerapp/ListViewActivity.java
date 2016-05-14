@@ -29,44 +29,16 @@ public class ListViewActivity extends AppCompatActivity {
                                     long id) {
 
                 int index = myDs.getRecipePool().indexOf(myDs.getRecipePool().get(position));
-                //String item = ((TextView)view).;
-                //RecipeDataSource source = (RecipeDataSource)parent.getItemAtPosition(position);
-                //Toast.makeText(getBaseContext(), myDs.getRecipePool().get(position), Toast.LENGTH_LONG).show();
                 Intent intent = new Intent(getApplicationContext(), ActivityDisplayRecipe.class);
                 Bundle bun = new Bundle();
                 bun.putString("title", myDs.getRecipePool().get(index));
                 bun.putString("description", myDs.getDescriptionPool().get(index));
+                bun.putString("ingredients", myDs.getIngredientPool().get(index));
+                bun.putString("directions", myDs.getInstructionPool().get(index));
                 intent.putExtras(bun);
                 startActivity(intent);
             }
         });
-        /*
-        recipesListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick(AdapterView<?> parent, View view, int position,
-                                    long id) {
-
-                String item = parent.getItemAtPosition(position).getClass().getTitle().toString();
-                RecipeDataSource item1 = (RecipeDataSource)parent.getAdapter().getItem(1);
-                String item = ((TextView)view).getText().toString();
-                String selectedFromList = (lv.getItemAtPosition(position));
-
-                Toast.makeText(getBaseContext(), item, Toast.LENGTH_LONG).show();
-
-            }
-        });*/
     }
-
-    /*
-    public void callRecipeView(View view) {
-        Intent intent = new Intent(getApplicationContext(), ActivityDisplayRecipe.class);
-        Bundle bun = new Bundle();
-        //int index = myDs.getRecipePool().indexOf(recipesListView.)
-        //bun.putString("title", myDs.getRecipePool());
-        //bun.putString("title", model.getTitle());
-        //bun.putString("description", model.getDescription());
-        intent.putExtras(bun);
-        startActivity(intent);
-    }*/
 
 }

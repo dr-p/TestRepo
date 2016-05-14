@@ -9,6 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ListView;
 import android.widget.TextView;
+import android.widget.Toast;
 
 
 import com.google.android.gms.appindexing.Action;
@@ -94,10 +95,10 @@ public class MainActivity extends AppCompatActivity {
 
         /* STEVEN */
 
-        ingSearch =  (Button) findViewById(R.id.button);
-        titleSearch = (Button) findViewById(R.id.button4);
-        upload = (Button) findViewById(R.id.button2);
-        displayAll = (Button) findViewById(R.id.button3);
+        ingSearch =  (Button) findViewById(R.id.buttonSearchIngredients);
+        titleSearch = (Button) findViewById(R.id.buttonSearchTitle);
+        upload = (Button) findViewById(R.id.buttonUpload);
+        displayAll = (Button) findViewById(R.id.buttonListView);
 
         ingSearch.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -138,6 +139,9 @@ public class MainActivity extends AppCompatActivity {
 
     }
 
+    public void toBeImplemented(View view) {
+        Toast.makeText(getBaseContext(), "To be implemented.", Toast.LENGTH_LONG).show();
+    }
 
     public void callRecipeView(View view) {
         Intent intent = new Intent(getApplicationContext(), ActivityDisplayRecipe.class);
@@ -147,6 +151,8 @@ public class MainActivity extends AppCompatActivity {
         intent.putExtras(bun);
         startActivity(intent);
     }
+
+
 
     /* DEPRECATED METHOD NOT NEEDED ANYMORE
     public void setTextViewMainDatabase(View view) {
@@ -216,8 +222,8 @@ public class MainActivity extends AppCompatActivity {
 
 
     /* VIDUSHI */
-    public void buttonOnCLick(View v) {
-        if (v.getId() == R.id.button) {
+    public void searchByIngredientStart(View v) {
+        if (v.getId() == R.id.buttonSearchIngredients) {
             EditText editText1 = (EditText) findViewById(R.id.editText1);
             EditText editText2 = (EditText) findViewById(R.id.editText2);
             EditText editText3 = (EditText) findViewById(R.id.editText3);
@@ -240,10 +246,17 @@ public class MainActivity extends AppCompatActivity {
                 IngD = editText4.getText().toString();
             }
             Intent i = new Intent(MainActivity.this, com.killer.recipes.allrecipekillerapp.ActivityDisplayRecipe.class);
+            Bundle bun = new Bundle();
+            bun.putString("Ingredient1", IngA);
+            bun.putString("Ingredient2", IngB);
+            bun.putString("Ingredient3", IngC);
+            bun.putString("Ingredient4", IngD);
+
+            /*
             i.putExtra("Ingredient1", IngA);
             i.putExtra("Ingredient2", IngB);
             i.putExtra("Ingredient3", IngC);
-            i.putExtra("Ingredient4", IngD);
+            i.putExtra("Ingredient4", IngD);*/
             startActivity(i);
         }
 

@@ -9,75 +9,50 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="com.killer.recipes.allrecipekillerapp.MainActivity">
 
-
-
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Search Ingredient"
-        android:id="@+id/button"
-        android:onClick="buttonOnCLick"
+        android:text="Search by Ingredients"
+        android:id="@+id/buttonSearchIngredients"
+        android:onClick="searchByIngredientStart"
         android:clickable="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
-
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Upload"
-        android:id="@+id/button2"
-        android:onClick="setTextViewMainUpload"
+        android:id="@+id/buttonUpload"
+        android:onClick="toBeImplemented"
 
         android:layout_alignParentBottom="true"
-        android:layout_alignEnd="@+id/button4" />
-
-    <!--<TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Make selection above"
-        android:id="@+id/textView"
-        android:layout_below="@+id/button"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="140dp"
-        android:textSize="20dp" />
-        -->
+        android:layout_alignEnd="@+id/buttonSearchTitle" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Display Recipes"
-        android:id="@+id/button3"
+        android:id="@+id/buttonListView"
         android:onClick="@+id/listView"
-        android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true" />
-
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true" />
 
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Search Title"
-        android:id="@+id/button4"
+        android:id="@+id/buttonSearchTitle"
         android:layout_alignParentTop="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignParentEnd="true"
+        android:onClick="toBeImplemented" />
 
-    <Button
+    <ImageView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Recipe View Tester"
-        android:id="@+id/recipeViewTester"
-        android:onClick="callRecipeView"
-        android:layout_alignParentBottom="true"
-        android:layout_alignParentStart="true" />
+        android:id="@+id/imageLogo"
+        android:src="@drawable/logo"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true" />
 
-    <!--<Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="RecipeViewTest"
-        android:id="@+id/RecipeViewButton"
-        android:layout_below="@+id/button3"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="35dp"
-        android:onClick="callRecipeView" />
-        -->
 </RelativeLayout>
