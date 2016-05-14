@@ -29,7 +29,7 @@ public class ListViewActivity extends AppCompatActivity {
             public void onItemClick(AdapterView<?> parent, View view, int position,
                                     long id) {
 
-                String item = parent.getItemAtPosition(position).getClass().getName().toString();
+                String item = parent.getItemAtPosition(position).getClass().getTitle().toString();
                 RecipeDataSource item1 = (RecipeDataSource)parent.getAdapter().getItem(1);
                 String item = ((TextView)view).getText().toString();
                 String selectedFromList = (lv.getItemAtPosition(position));

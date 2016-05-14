@@ -150,11 +150,11 @@ public class MainActivity extends AppCompatActivity {
 
     /* DEPRECATED METHOD NOT NEEDED ANYMORE
     public void setTextViewMainDatabase(View view) {
-        RecipeServiceDEPRECATED serv = new RecipeServiceDEPRECATED();
+        RecipeTreeDEPRECATED serv = new RecipeTreeDEPRECATED();
         for (int i = 0; i < 9999; i++) {
-            serv.addRecipe(new RecipeServiceNodeDEPRECATED(new RecipeDEPRECATED()));
+            serv.addRecipe(new RecipeNodeDEPRECATED(new RecipeDEPRECATED()));
         }
-        //String numberRecipes = String.valueOf((new RecipeServiceDEPRECATED()).count());
+        //String numberRecipes = String.valueOf((new RecipeTreeDEPRECATED()).count());
 
         //TextView tv = (TextView) findViewById(R.id.textView);
         //tv.setText(String.valueOf(serv.getNumRecipes()));
