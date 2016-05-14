@@ -24,7 +24,7 @@ public class ActivityDisplayRecipe extends AppCompatActivity {
             title.setText(bun.getString("title"));
             description.setText(bun.getString("description"));
             Resources res = getResources();
-            int resourceId = res.getIdentifier(bun.getString("title").replace(" ", "").toLowerCase(), "drawable", getPackageName());
+            int resourceId = res.getIdentifier(bun.getString("title").replace(" ", "_").toLowerCase(), "drawable", getPackageName());
             image.setImageResource(resourceId);
         }
     }

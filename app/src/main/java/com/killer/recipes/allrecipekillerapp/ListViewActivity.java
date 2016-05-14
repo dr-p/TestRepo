@@ -18,11 +18,28 @@ public class ListViewActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_list_view);
 
-        myDs = new RecipeDataSource();
+        myDs = new RecipeDataSource(this);
         recipesListView = (ListView)findViewById(R.id.listView);
         recipesListView.setAdapter(new RecipeDataSourceAdapter(this.getApplicationContext(), this.myDs));
 
 
+        recipesListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
+            @Override
+            public void onItemClick(AdapterView<?> parent, View view, int position,
+                                    long id) {
+
+                int index = myDs.getRecipePool().indexOf(myDs.getRecipePool().get(position));
+                //String item = ((TextView)view).;
+                //RecipeDataSource source = (RecipeDataSource)parent.getItemAtPosition(position);
+                //Toast.makeText(getBaseContext(), myDs.getRecipePool().get(position), Toast.LENGTH_LONG).show();
+                Intent intent = new Intent(getApplicationContext(), ActivityDisplayRecipe.class);
+                Bundle bun = new Bundle();
+                bun.putString("title", myDs.getRecipePool().get(index));
+                bun.putString("description", myDs.getDescriptionPool().get(index));
+                intent.putExtras(bun);
+                startActivity(intent);
+            }
+        });
         /*
         recipesListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override

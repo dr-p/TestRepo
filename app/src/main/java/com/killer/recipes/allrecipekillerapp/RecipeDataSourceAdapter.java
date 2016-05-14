@@ -40,10 +40,8 @@ public class RecipeDataSourceAdapter extends BaseAdapter {
 
     @Override
     public Object getItem(int i) {
-        return myDataSource;
+        return null;
     }
-
-
 
 
     @Override

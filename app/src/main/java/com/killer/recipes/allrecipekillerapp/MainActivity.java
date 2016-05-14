@@ -89,7 +89,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         */
-        myDs = new RecipeDataSource();
+        myDs = new RecipeDataSource(this);
 
 
         /* STEVEN */
