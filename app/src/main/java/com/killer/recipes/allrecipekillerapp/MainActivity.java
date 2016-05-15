@@ -18,8 +18,8 @@ import com.google.android.gms.common.api.GoogleApiClient;
 
 
 public class MainActivity extends AppCompatActivity {
-    private RecipeDataSource myDs;
-    //private ListView recipesListView;
+
+    //private RecipeDataSource myDs; to be implemented if upload feature is enableed
 
 
     String[] items = new String[4];
@@ -90,7 +90,7 @@ public class MainActivity extends AppCompatActivity {
             }
         });
         */
-        myDs = new RecipeDataSource(this);
+        //myDs = new RecipeDataSource(this);
 
 
         /* STEVEN */
