@@ -33,7 +33,6 @@ public class MainActivity extends AppCompatActivity {
     private GoogleApiClient client;
 
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
 
@@ -81,8 +80,6 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
-
-    /* STEVEN */
     @Override
     public void onStart() {
         super.onStart();
