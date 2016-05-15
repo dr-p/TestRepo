@@ -20,9 +20,7 @@ import com.google.android.gms.common.api.GoogleApiClient;
 public class MainActivity extends AppCompatActivity {
 
     Button ingSearch;
-    Button titleSearch;
     Button displayAll;
-    Button upload;
 
     /**
      * ATTENTION: This was auto-generated to implement the App Indexing API.
@@ -40,8 +38,6 @@ public class MainActivity extends AppCompatActivity {
 
 
         ingSearch =  (Button) findViewById(R.id.buttonSearchIngredients);
-        titleSearch = (Button) findViewById(R.id.buttonSearchTitle);
-        upload = (Button) findViewById(R.id.buttonUpload);
         displayAll = (Button) findViewById(R.id.buttonListView);
 
         ingSearch.setOnClickListener(new View.OnClickListener() {
@@ -51,13 +47,6 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-        titleSearch.setOnClickListener(new View.OnClickListener(){
-            @Override
-            public void onClick(View v) {
-            }
-        });
-
-
         displayAll.setOnClickListener(new View.OnClickListener(){
             @Override
             public void onClick(View v) {
@@ -66,17 +55,13 @@ public class MainActivity extends AppCompatActivity {
             }
         });
 
-
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
-
     }
-
     public void toBeImplemented(View view) {
         Toast.makeText(getBaseContext(), "To be implemented.", Toast.LENGTH_LONG).show();
     }
-
 
     @Override
     public void onStart() {
