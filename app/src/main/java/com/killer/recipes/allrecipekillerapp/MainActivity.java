@@ -19,8 +19,6 @@ import com.google.android.gms.common.api.GoogleApiClient;
 
 public class MainActivity extends AppCompatActivity {
 
-
-
     Button ingSearch;
     Button titleSearch;
     Button displayAll;
@@ -119,6 +117,5 @@ public class MainActivity extends AppCompatActivity {
         AppIndex.AppIndexApi.end(client, viewAction);
         client.disconnect();
     }
-
 
 }
