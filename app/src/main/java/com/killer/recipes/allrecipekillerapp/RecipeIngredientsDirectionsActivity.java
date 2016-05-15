@@ -26,6 +26,7 @@ public class RecipeIngredientsDirectionsActivity extends AppCompatActivity {
             directions.setText(bun.getString("directions"));
             Resources res = getResources();
             int resourceId = res.getIdentifier(bun.getString("title").replace(" ", "_").toLowerCase(), "drawable", getPackageName());
+            image.setImageResource(resourceId);
         }
     }
 }
