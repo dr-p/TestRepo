@@ -143,16 +143,6 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(getBaseContext(), "To be implemented.", Toast.LENGTH_LONG).show();
     }
 
-    public void callRecipeView(View view) {
-        Intent intent = new Intent(getApplicationContext(), ActivityDisplayRecipe.class);
-        Bundle bun = new Bundle();
-        bun.putString("title", model.getTitle());
-        bun.putString("description", model.getDescription());
-        intent.putExtras(bun);
-        startActivity(intent);
-    }
-
-
 
     /* DEPRECATED METHOD NOT NEEDED ANYMORE
     public void setTextViewMainDatabase(View view) {

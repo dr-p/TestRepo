@@ -1,22 +1,51 @@
 package com.killer.recipes.allrecipekillerapp;
 
+import android.content.res.Resources;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
 import android.widget.TextView;
 
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.StringTokenizer;
 
 public class RecipeSearchResultActivity extends AppCompatActivity {
 
+    RecipeDataSource myDs = new RecipeDataSource(this);
+    ArrayList<ArrayList<String>> Ingredients = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipe_search_result);
 
 
+        ArrayList<String> strTokens;
+        for (int i = 0; i < myDs.getIngredientPool().size(); i++) {
+            strTokens = new ArrayList<>();
+            StringTokenizer st = new StringTokenizer(myDs.getIngredientPool().get(i));
+            while(st.hasMoreTokens()) {
+                strTokens.add(st.nextToken());
+            }
+            Ingredients.add((ArrayList<String>) strTokens.clone());
+        }
     }
 
+    public void listPossibleRecipes() {
+        Bundle bun = getIntent().getExtras();
+        TextView Recipes = (TextView)findViewById(R.id.textViewIngSrchResults);
+        if (bun != null) {
+            String ing1 = bun.getString("Ingredient1");
+            String ing2 = bun.getString("Ingredient2");
+            String ing3 = bun.getString("Ingredient3");
+            String ing4 = bun.getString("Ingredient4");
+            for (int i = 0; i < Ingredients.size(); i++) {
+                if (Ingredients.get(i).contains(ing1) || Ingredients.get(i).contains(ing2) || Ingredients.get(i).contains(ing3) || Ingredients.get(i).contains(ing4)) {
+                    Recipes.setText(Recipes.getText() + " " + myDs.getRecipePool().get(i));
+                }
+            }
+        }
+    }
     /*
 
     String A = getIntent().getStringExtra("Ingredient1");

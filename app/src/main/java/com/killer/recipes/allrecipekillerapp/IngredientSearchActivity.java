@@ -25,22 +25,19 @@ public class IngredientSearchActivity extends AppCompatActivity {
         EditText editText3 = (EditText) findViewById(R.id.editText3);
         EditText editText4 = (EditText) findViewById(R.id.editText4);
 
-        String IngA = null;
-        if (editText1 != null) {
+        String IngA;
+        String IngB;
+        String IngC;
+        String IngD;
+
             IngA = editText1.getText().toString();
-        }
-        String IngB = null;
-        if (editText2 != null) {
+
             IngB = editText2.getText().toString();
-        }
-        String IngC = null;
-        if (editText3 != null) {
+
             IngC = editText3.getText().toString();
-        }
-        String IngD = null;
-        if (editText4 != null) {
+
             IngD = editText4.getText().toString();
-        }
+
         Intent i = new Intent(getApplicationContext(), RecipeSearchResultActivity.class);
         Bundle bun = new Bundle();
         bun.putString("Ingredient1", IngA);
@@ -49,6 +46,7 @@ public class IngredientSearchActivity extends AppCompatActivity {
         bun.putString("Ingredient4", IngD);
 
         i.putExtras(bun);
+        startActivity(i);
     }
 }
     /*

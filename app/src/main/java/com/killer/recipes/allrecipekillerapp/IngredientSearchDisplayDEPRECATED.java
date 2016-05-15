@@ -16,7 +16,8 @@ public class IngredientSearchDisplayDEPRECATED extends Activity {
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipe_search_result);
-        String A = getIntent().getStringExtra("Ingredient1");
+
+       /* String A = getIntent().getStringExtra("Ingredient1");
         String B = getIntent().getStringExtra("Ingredient2");
         String C = getIntent().getStringExtra("Ingredient3");
         String D = getIntent().getStringExtra("Ingredient4");

@@ -60,8 +60,8 @@
         android:id="@+id/button5"
         android:layout_gravity="center_horizontal"
         android:clickable="false"
-        android:onClick="searchByIngredient"
         android:longClickable="false"
-        android:layout_below="@id/editText4"/>
+        android:layout_below="@id/editText4"
+        android:onClick="startIngredientSearch" />
 
 </RelativeLayout>
