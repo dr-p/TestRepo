@@ -226,7 +226,7 @@ public class MainActivity extends AppCompatActivity {
 }
 
 /**
- * Vidushi commented this portion on her files out. Including it in here just in case they're needed.
+ * Vidushi commented this portion on her files out. Including it in here just in case needed.
  */
       /*Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
