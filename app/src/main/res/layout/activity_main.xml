@@ -14,7 +14,6 @@
         android:layout_height="wrap_content"
         android:text="Search by Ingredients"
         android:id="@+id/buttonSearchIngredients"
-        android:onClick="searchByIngredientStart"
         android:clickable="true"
         android:layout_alignParentTop="true"
         android:layout_alignParentStart="true" />
