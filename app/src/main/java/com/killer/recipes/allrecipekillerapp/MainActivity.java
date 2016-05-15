@@ -20,7 +20,7 @@ import com.google.android.gms.common.api.GoogleApiClient;
 public class MainActivity extends AppCompatActivity {
 
 
-    /* STEVEN */
+
     Button ingSearch;
     Button titleSearch;
     Button displayAll;
@@ -31,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
      * See https://g.co/AppIndexing/AndroidStudio for more information.
      */
     private GoogleApiClient client;
-    /* STEVEN */
+
 
 
     @Override
@@ -41,8 +41,6 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-
-        /* STEVEN */
 
         ingSearch =  (Button) findViewById(R.id.buttonSearchIngredients);
         titleSearch = (Button) findViewById(R.id.buttonSearchTitle);
@@ -75,7 +73,6 @@ public class MainActivity extends AppCompatActivity {
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
-        /* STEVEN */
 
     }
 
@@ -83,12 +80,6 @@ public class MainActivity extends AppCompatActivity {
         Toast.makeText(getBaseContext(), "To be implemented.", Toast.LENGTH_LONG).show();
     }
 
-
-    public void listView(View view) {
-
-        Intent intent = new Intent(this, ActivityDisplayRecipe.class);
-        startActivity(intent);
-    }
 
 
     /* STEVEN */
@@ -130,10 +121,7 @@ public class MainActivity extends AppCompatActivity {
         );
         AppIndex.AppIndexApi.end(client, viewAction);
         client.disconnect();
-        /* STEVEN */
     }
-
-
 
 
 }
