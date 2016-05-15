@@ -54,7 +54,7 @@ public class IngredientSearchActivity extends AppCompatActivity {
     /*
      VIDUSHI
     public void searchByIngredient(View v) {
-        //if (v.getId() == R.id.buttonSearchIngredients) {
+        if (v.getId() == R.id.buttonSearchIngredients) {
             EditText editText1 = (EditText) findViewById(R.id.editText1);
             EditText editText2 = (EditText) findViewById(R.id.editText2);
             EditText editText3 = (EditText) findViewById(R.id.editText3);
