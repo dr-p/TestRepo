@@ -30,11 +30,10 @@
 
         <activity android:name=".ListViewActivity" />
         <activity android:name=".CreateNewRecipeActivity" />
-        <activity android:name=".TitleSearchActivity" />
         <activity android:name=".IngredientSearchActivity" />
-        <activity android:name=".RecipeSearchResultActivity" />
-        <activity android:name=".RecipeIngredientsDirectionsActivity"></activity>
-        <activity android:name=".IngredientSearchResultsActivity"></activity>
+        <activity android:name=".RecipeIngredientsDirectionsActivity" />
+        <activity android:name=".IngredientSearchResultsActivity" />
+        <activity android:name=".NameSearchActivity"></activity>
     </application>
 
 </manifest>

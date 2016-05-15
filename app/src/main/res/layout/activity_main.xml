@@ -65,8 +65,9 @@
         android:layout_height="wrap_content"
         android:id="@+id/imageLogo"
         android:src="@drawable/recipal_logos"
-        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:background="#adbdf7" />
+        android:background="#FFFFFF"
+        android:layout_below="@+id/buttonSearchIngredients"
+        android:layout_above="@+id/buttonUpload" />
 
 </RelativeLayout>

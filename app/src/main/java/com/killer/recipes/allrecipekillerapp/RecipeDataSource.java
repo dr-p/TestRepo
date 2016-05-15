@@ -52,11 +52,11 @@ public class RecipeDataSource{
      */
     public RecipeDataSource(Context con) {
         photoPool = new ArrayList<Integer>();
-        descriptionPool = new ArrayList<String>();
-        recipePool = new ArrayList<String>();
+        descriptionPool = new ArrayList<>();
+        recipePool = new ArrayList<>();
         this.appCon = con;
-        ingredientPool = new ArrayList<String>();
-        instructionPool = new ArrayList<String>();
+        ingredientPool = new ArrayList<>();
+        instructionPool = new ArrayList<>();
         //load the array lists when you construct a RecipeDataSource
         setupPhotoPool();
         setupRecipePool();
@@ -81,10 +81,6 @@ public class RecipeDataSource{
         photoPool.add(R.drawable.chocolate_cupcakes);
     }
 
-    public int getRecipeIndex(String nameOfRecipe) {
-        return this.recipePool.indexOf(nameOfRecipe);
-        //return 44;
-    }
     public void setupRecipePool() {
 
         recipePool.add(this.appCon.getResources().getString((R.string.recipe1)));
@@ -102,10 +98,6 @@ public class RecipeDataSource{
         recipePool.add(this.appCon.getResources().getString((R.string.recipe13)));
     }
 
-    /*
-    public getRecipeName(int i) {
-        return recipePool.get(i)
-    }*/
     public void setupDescriptionPool() {
         descriptionPool.add(this.appCon.getResources().getString(R.string.description1));
         descriptionPool.add(this.appCon.getResources().getString(R.string.description2));
@@ -120,20 +112,6 @@ public class RecipeDataSource{
         descriptionPool.add(this.appCon.getResources().getString(R.string.description11));
         descriptionPool.add(this.appCon.getResources().getString(R.string.description12));
         descriptionPool.add(this.appCon.getResources().getString(R.string.description13));
-        /*
-        descriptionPool.add(R.string.description1);
-        descriptionPool.add(R.string.description2);
-        descriptionPool.add(R.string.description3);
-        descriptionPool.add(R.string.description4);
-        descriptionPool.add(R.string.description5);
-        descriptionPool.add(R.string.description6);
-        descriptionPool.add(R.string.description7);
-        descriptionPool.add(R.string.description8);
-        descriptionPool.add(R.string.description9);
-        descriptionPool.add(R.string.description10);
-        descriptionPool.add(R.string.description11);
-        descriptionPool.add(R.string.description12);
-        descriptionPool.add(R.string.description13);*/
     }
 
     public void setupInstructionPool() {
@@ -150,20 +128,6 @@ public class RecipeDataSource{
         instructionPool.add(this.appCon.getResources().getString(R.string.instruction11));
         instructionPool.add(this.appCon.getResources().getString(R.string.instruction12));
         instructionPool.add(this.appCon.getResources().getString(R.string.instruction13));
-        /*
-        instructionPool.add(R.string.instruction1);
-        instructionPool.add(R.string.instruction2);
-        instructionPool.add(R.string.instruction3);
-        instructionPool.add(R.string.instruction4);
-        instructionPool.add(R.string.instruction5);
-        instructionPool.add(R.string.instruction6);
-        instructionPool.add(R.string.instruction7);
-        instructionPool.add(R.string.instruction8);
-        instructionPool.add(R.string.instruction9);
-        instructionPool.add(R.string.instruction10);
-        instructionPool.add(R.string.instruction11);
-        instructionPool.add(R.string.instruction12);
-        instructionPool.add(R.string.instruction13);*/
     }
 
     public void setupIngredientPool() {
@@ -180,20 +144,6 @@ public class RecipeDataSource{
         ingredientPool.add(this.appCon.getResources().getString(R.string.ingredient11));
         ingredientPool.add(this.appCon.getResources().getString(R.string.ingredient12));
         ingredientPool.add(this.appCon.getResources().getString(R.string.ingredient13));
-        /*
-        ingredientPool.add(R.string.ingredient1);
-        ingredientPool.add(R.string.ingredient2);
-        ingredientPool.add(R.string.ingredient3);
-        ingredientPool.add(R.string.ingredient4);
-        ingredientPool.add(R.string.ingredient5);
-        ingredientPool.add(R.string.ingredient6);
-        ingredientPool.add(R.string.ingredient7);
-        ingredientPool.add(R.string.ingredient8);
-        ingredientPool.add(R.string.ingredient9);
-        ingredientPool.add(R.string.ingredient10);
-        ingredientPool.add(R.string.ingredient11);
-        ingredientPool.add(R.string.ingredient12);
-        ingredientPool.add(R.string.ingredient13);*/
     }
 
     public int getDataSourceLength() {

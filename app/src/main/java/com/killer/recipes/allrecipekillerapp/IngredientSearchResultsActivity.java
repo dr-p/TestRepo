@@ -7,9 +7,11 @@ import android.view.View;
 import android.widget.AdapterView;
 import android.widget.ListView;
 
-import java.util.ArrayList;
+
 
 public class IngredientSearchResultsActivity extends AppCompatActivity {
+
+
 
     private RecipeDataSource myDs;
     private ListView recipesListView;
@@ -20,14 +22,10 @@ public class IngredientSearchResultsActivity extends AppCompatActivity {
         setContentView(R.layout.activity_list_view);
 
         myDs = new RecipeDataSource(this);
+        recipesListView = (ListView)findViewById(R.id.listView);
         Bundle bun = getIntent().getExtras();
-        recipesListView = (ListView)findViewById(R.id.listViewIngSearchResults);
-        ArrayList<String> temp = new ArrayList<>();
-        temp.add("cow");
-        temp.add("bow");
-        recipesListView.setAdapter(new RecipeIngredientSearchAdapter(this.getApplicationContext(), new RecipeDataSource(this), temp));
+        recipesListView.setAdapter(new RecipeIngredientSearchAdapter(this.getApplicationContext(), this.myDs, bun.getStringArrayList("list")));
 
-//(ArrayList<String>)bun.get("List"))
         recipesListView.setOnItemClickListener(new AdapterView.OnItemClickListener() {
             @Override
             public void onItemClick(AdapterView<?> parent, View view, int position,

@@ -23,9 +23,8 @@
         android:layout_height="wrap_content"
         android:text="Recipe Ingredients"
         android:id="@+id/textViewIngredients"
-        android:layout_above="@+id/textViewDirections"
-        android:layout_centerHorizontal="true"
-        android:layout_marginBottom="43dp" />
+        android:layout_below="@+id/imageViewRecipeInstructionWindow"
+        android:layout_centerHorizontal="true" />
 
     <TextView
         android:layout_width="wrap_content"
@@ -33,7 +32,7 @@
         android:text="Recipe Directions"
         android:id="@+id/textViewDirections"
         android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignEnd="@+id/textViewIngredients" />
 
     <ImageView
         android:layout_width="wrap_content"
@@ -41,5 +40,6 @@
         android:id="@+id/imageViewRecipeInstructionWindow"
         android:src="@drawable/grilled_chicken_with_lemon"
         android:layout_below="@+id/textViewRecipeName"
-        android:layout_centerHorizontal="true" />
+        android:layout_alignStart="@+id/textViewIngredients"
+        android:layout_alignEnd="@+id/textViewIngredients" />
 </RelativeLayout>
