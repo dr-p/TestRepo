@@ -10,8 +10,10 @@ public class RecipeDataSource{
      * Create 3 array lists. 1 for activity_recipe_search_result titles, 1 for activity_recipe_search_result descriptions, 1 for activity_recipe_search_result images
      */
     private ArrayList<Integer> photoPool;
+    private ArrayList<Integer> photoPoolClone;
     private ArrayList<String> descriptionPool;
     private ArrayList<String> recipePool;
+    private ArrayList<String> recipePoolClone;
     private ArrayList<String> instructionPool;
     private ArrayList<String> ingredientPool;
     private Context appCon;
@@ -51,18 +53,19 @@ public class RecipeDataSource{
      * Constructor
      */
     public RecipeDataSource(Context con) {
-        photoPool = new ArrayList<Integer>();
+        photoPool = new ArrayList<>();
         descriptionPool = new ArrayList<>();
         recipePool = new ArrayList<>();
         this.appCon = con;
         ingredientPool = new ArrayList<>();
         instructionPool = new ArrayList<>();
-        //load the array lists when you construct a RecipeDataSource
         setupPhotoPool();
         setupRecipePool();
         setupDescriptionPool();
         setupIngredientPool();
         setupInstructionPool();
+        recipePoolClone = new ArrayList<>();
+        photoPoolClone = new ArrayList<>();
     }
 
     public void setupPhotoPool() {
@@ -80,6 +83,18 @@ public class RecipeDataSource{
         photoPool.add(R.drawable.strawberry_shortcake);
         photoPool.add(R.drawable.chocolate_cupcakes);
     }
+    public void setupPhotoPoolClone(ArrayList<String> found) {
+        for (int i = 0; i < recipePool.size(); i++) {
+            if (found.contains(recipePool.get(i))) {
+                photoPoolClone.add(photoPool.get(i));
+            } else {
+                photoPoolClone.add(R.drawable.dummy);
+            }
+        }
+    }
+    public ArrayList<Integer> getPhotoPoolClone() {
+        return photoPoolClone;
+    }
 
     public void setupRecipePool() {
 
@@ -96,6 +111,19 @@ public class RecipeDataSource{
         recipePool.add(this.appCon.getResources().getString((R.string.recipe11)));
         recipePool.add(this.appCon.getResources().getString((R.string.recipe12)));
         recipePool.add(this.appCon.getResources().getString((R.string.recipe13)));
+    }
+    public void setupRecipePoolClone(ArrayList<String> found) {
+
+        for (int i = 0; i < recipePool.size(); i++) {
+            if (found.contains(recipePool.get(i))) {
+                recipePoolClone.add(recipePool.get(i));
+            } else {
+                recipePoolClone.add("");
+            }
+        }
+    }
+    public ArrayList<String> getRecipePoolClone() {
+        return recipePoolClone;
     }
 
     public void setupDescriptionPool() {

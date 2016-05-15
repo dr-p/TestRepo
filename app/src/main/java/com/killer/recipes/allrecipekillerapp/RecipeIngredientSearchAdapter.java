@@ -59,14 +59,11 @@ public class RecipeIngredientSearchAdapter extends BaseAdapter {
         thumbNail = (ImageView)convertView.findViewById(R.id.thumb);
         name = (TextView)convertView.findViewById(R.id.text);
 
+        myDataSource.setupRecipePoolClone(foundRecipes);
+        myDataSource.setupPhotoPoolClone(foundRecipes);
 
-        for (int i = 0; i < foundRecipes.size(); i++) {
-            if (foundRecipes.contains(myDataSource.getRecipePool().get(position))) {
-
-                name.setText((myDataSource.getRecipePool().get(position)));
-                thumbNail.setImageResource(myDataSource.getPhotoPool().get(position));
-            }
-        }
+            name.setText(myDataSource.getRecipePoolClone().get(position));
+            thumbNail.setImageResource(myDataSource.getPhotoPoolClone().get(position));
         return convertView;
     }
 }
