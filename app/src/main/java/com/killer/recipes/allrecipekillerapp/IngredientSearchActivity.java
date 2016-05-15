@@ -8,15 +8,21 @@ import android.view.View;
 import android.widget.EditText;
 import android.widget.TextView;
 
+import java.lang.reflect.Array;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.StringTokenizer;
 
 public class IngredientSearchActivity extends AppCompatActivity {
 
+    private ArrayList<ArrayList<String>> Ingredients = new ArrayList<>();
+    private ArrayList<String> foundRecipes = new ArrayList<>();
+    RecipeDataSource myDs;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_ingredient_search);
-
+         myDs = new RecipeDataSource(this);
     }
 
     public void startIngredientSearch(View view) {
@@ -38,17 +44,59 @@ public class IngredientSearchActivity extends AppCompatActivity {
 
             IngD = editText4.getText().toString();
 
-        Intent i = new Intent(getApplicationContext(), RecipeSearchResultActivity.class);
-        Bundle bun = new Bundle();
-        bun.putString("Ingredient1", IngA);
-        bun.putString("Ingredient2", IngB);
-        bun.putString("Ingredient3", IngC);
-        bun.putString("Ingredient4", IngD);
 
-        i.putExtras(bun);
-        startActivity(i);
+        //searchRecipesByIngredient(IngA, IngB, IngC, IngD);
+        ArrayList<String> strTokens;
+        for (int i = 0; i < myDs.getIngredientPool().size(); i++) {
+            strTokens = new ArrayList<>();
+            StringTokenizer st = new StringTokenizer(myDs.getIngredientPool().get(i));
+            while(st.hasMoreTokens()) {
+                strTokens.add(st.nextToken());
+            }
+            Ingredients.add((ArrayList<String>) strTokens.clone());
+        }
+
+        for (int i = 0; i < Ingredients.size(); i++) {
+            if (Ingredients.get(i).contains(IngA) || Ingredients.get(i).contains(IngB) || Ingredients.get(i).contains(IngC) || Ingredients.get(i).contains(IngD)) {
+                //Recipes.setText(Recipes.getText() + " " + myDs.getRecipePool().get(i));
+                foundRecipes.add(myDs.getRecipePool().get(i));
+            }
+        }
+        Intent in = new Intent(getApplicationContext(), IngredientSearchResultsActivity.class);
+        Bundle bun = new Bundle();
+        bun.putStringArrayList("list", foundRecipes);
+        in.putExtras(bun);
+        startActivity(in);
+
     }
-}
+
+    /*
+    public void searchRecipesByIngredient(String ing1, String ing2, String ing3, String ing4) {
+        ArrayList<String> strTokens;
+        for (int i = 0; i < myDs.getIngredientPool().size(); i++) {
+            strTokens = new ArrayList<>();
+            StringTokenizer st = new StringTokenizer(myDs.getIngredientPool().get(i));
+            while(st.hasMoreTokens()) {
+                strTokens.add(st.nextToken());
+            }
+            Ingredients.add((ArrayList<String>) strTokens.clone());
+        }
+
+            for (int i = 0; i < Ingredients.size(); i++) {
+                if (Ingredients.get(i).contains(ing1) || Ingredients.get(i).contains(ing2) || Ingredients.get(i).contains(ing3) || Ingredients.get(i).contains(ing4)) {
+                    //Recipes.setText(Recipes.getText() + " " + myDs.getRecipePool().get(i));
+                    foundRecipes.add(myDs.getRecipePool().get(i));
+                }
+            }
+        Intent in = new Intent(getApplicationContext(), IngredientSearchResultsActivity.class);
+        Bundle bun = new Bundle();
+        bun.putStringArrayList("list", foundRecipes);
+        in.putExtras(bun);
+        startActivity(in);
+
+        }*/
+    }
+
     /*
      VIDUSHI
     public void searchByIngredient(View v) {

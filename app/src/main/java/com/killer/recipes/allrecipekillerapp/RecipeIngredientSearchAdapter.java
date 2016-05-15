@@ -10,22 +10,25 @@ import android.widget.TextView;
 
 import java.util.ArrayList;
 
-public class RecipeDataSourceAdapter extends BaseAdapter {
+/**
+ * Created by Chris on 5/15/2016.
+ */
+public class RecipeIngredientSearchAdapter extends BaseAdapter {
     private Context myContext;
     private LayoutInflater myInflator;
     private RecipeDataSource myDataSource;
-
-
+    private ArrayList<String> foundRecipes;
     /**
      * Constructor
      * @param ctxt
      * @param recipeDataSource
      */
-    public RecipeDataSourceAdapter(Context ctxt, RecipeDataSource recipeDataSource) {
+    public RecipeIngredientSearchAdapter(Context ctxt, RecipeDataSource recipeDataSource, ArrayList<String> recipes) {
         myContext = ctxt;
         myDataSource = recipeDataSource;
         myInflator = (LayoutInflater)myContext.getSystemService(Context.LAYOUT_INFLATER_SERVICE);
 
+        foundRecipes = recipes;
     }
 
     @Override
@@ -53,9 +56,14 @@ public class RecipeDataSourceAdapter extends BaseAdapter {
             convertView = myInflator.inflate(R.layout.list_item_layout, parent, false);
         }
         thumbNail = (ImageView)convertView.findViewById(R.id.thumb);
-        thumbNail.setImageResource(myDataSource.getPhotoPool().get(position));
+
         name = (TextView)convertView.findViewById(R.id.text);
-        name.setText(myDataSource.getRecipePool().get(position));
+        for (int i = 0; i < foundRecipes.size(); i++) {
+            if (myDataSource.getRecipePool().get(position).equals(foundRecipes.get(i))) {
+                name.setText(myDataSource.getRecipePool().get(position));
+                thumbNail.setImageResource(myDataSource.getPhotoPool().get(position));
+            }
+        }
 
         return convertView;
     }

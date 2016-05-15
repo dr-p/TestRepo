@@ -12,13 +12,14 @@ import java.util.StringTokenizer;
 
 public class RecipeSearchResultActivity extends AppCompatActivity {
 
-    RecipeDataSource myDs = new RecipeDataSource(this);
+    RecipeDataSource myDs;
     ArrayList<ArrayList<String>> Ingredients = new ArrayList<>();
+    ArrayList<String> foundRecipes = new ArrayList<>();
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_recipe_search_result);
-
+        myDs = new RecipeDataSource(this);
 
         ArrayList<String> strTokens;
         for (int i = 0; i < myDs.getIngredientPool().size(); i++) {
@@ -29,9 +30,7 @@ public class RecipeSearchResultActivity extends AppCompatActivity {
             }
             Ingredients.add((ArrayList<String>) strTokens.clone());
         }
-    }
 
-    public void listPossibleRecipes() {
         Bundle bun = getIntent().getExtras();
         TextView Recipes = (TextView)findViewById(R.id.textViewIngSrchResults);
         if (bun != null) {
@@ -41,11 +40,13 @@ public class RecipeSearchResultActivity extends AppCompatActivity {
             String ing4 = bun.getString("Ingredient4");
             for (int i = 0; i < Ingredients.size(); i++) {
                 if (Ingredients.get(i).contains(ing1) || Ingredients.get(i).contains(ing2) || Ingredients.get(i).contains(ing3) || Ingredients.get(i).contains(ing4)) {
-                    Recipes.setText(Recipes.getText() + " " + myDs.getRecipePool().get(i));
+                    //Recipes.setText(Recipes.getText() + " " + myDs.getRecipePool().get(i));
+                    foundRecipes.add(myDs.getRecipePool().get(i));
                 }
             }
         }
     }
+
     /*
 
     String A = getIntent().getStringExtra("Ingredient1");
