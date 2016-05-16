@@ -59,14 +59,10 @@ public class MainActivity extends AppCompatActivity {
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client = new GoogleApiClient.Builder(this).addApi(AppIndex.API).build();
     }
-    public void toBeImplemented(View view) {
-        Toast.makeText(getBaseContext(), "To be implemented.", Toast.LENGTH_LONG).show();
-    }
 
     @Override
     public void onStart() {
         super.onStart();
-
         // ATTENTION: This was auto-generated to implement the App Indexing API.
         // See https://g.co/AppIndexing/AndroidStudio for more information.
         client.connect();
