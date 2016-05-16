@@ -26,23 +26,17 @@ public class IngredientSearchActivity extends AppCompatActivity {
     }
 
     public void startIngredientSearch(View view) {
-        EditText editText1 = (EditText) findViewById(R.id.editText1);
-        EditText editText2 = (EditText) findViewById(R.id.editText2);
-        EditText editText3 = (EditText) findViewById(R.id.editText3);
-        EditText editText4 = (EditText) findViewById(R.id.editText4);
+        EditText eTextFieldUno = (EditText) findViewById(R.id.editText1);
+        EditText eTextFieldDos = (EditText) findViewById(R.id.editText2);
+        EditText eTextFieldTres = (EditText) findViewById(R.id.editText3);
+        EditText eTextFieldCuatro = (EditText) findViewById(R.id.editText4);
 
-        String IngA;
-        String IngB;
-        String IngC;
-        String IngD;
+        String ingredientA, ingredientB, ingredientC, ingredientD;
 
-            IngA = editText1.getText().toString();
-
-            IngB = editText2.getText().toString();
-
-            IngC = editText3.getText().toString();
-
-            IngD = editText4.getText().toString();
+            ingredientA = eTextFieldUno.getText().toString();
+            ingredientB = eTextFieldDos.getText().toString();
+            ingredientC = eTextFieldTres.getText().toString();
+            ingredientD = eTextFieldCuatro.getText().toString();
 
 
         ArrayList<String> strTokens;
@@ -56,8 +50,7 @@ public class IngredientSearchActivity extends AppCompatActivity {
         }
 
         for (int i = 0; i < Ingredients.size(); i++) {
-            if (Ingredients.get(i).contains(IngA) || Ingredients.get(i).contains(IngB) || Ingredients.get(i).contains(IngC) || Ingredients.get(i).contains(IngD)) {
-                //Recipes.setText(Recipes.getText() + " " + myDs.getRecipePool().get(i));
+            if (Ingredients.get(i).contains(ingredientA) || Ingredients.get(i).contains(ingredientB) || Ingredients.get(i).contains(ingredientC) || Ingredients.get(i).contains(ingredientD)) {
                 foundRecipes.add(myDs.getRecipePool().get(i));
             }
         }
@@ -68,7 +61,6 @@ public class IngredientSearchActivity extends AppCompatActivity {
         startActivity(in);
 
     }
-
 
     }
 
