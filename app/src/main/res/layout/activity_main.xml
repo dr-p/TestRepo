@@ -44,6 +44,7 @@
         android:src="@drawable/recipal_logos"
         android:layout_centerHorizontal="true"
         android:background="#FFFFFF"
-        android:layout_below="@+id/buttonSearchIngredients" />
+        android:layout_below="@+id/buttonSearchIngredients"
+        android:layout_above="@+id/buttonListView" />
 
 </RelativeLayout>
