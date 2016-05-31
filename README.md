@@ -20,7 +20,7 @@ TO BEGIN COLLABORATING AND MAKING CHANGES TO THIS PROJECT:
 2. Open Android Studio
 3. Check out project from Version Control
 4. Select Github
-5. Enter https://github.com/dr-p/AllrecipeKillerApp.git for the "Git Repository URL"
+5. Enter https://github.com/dr-p/testRepo.git for the "Git Repository URL"
 6. Choose a parent directory for the cloned project (Preferably a separate folder from your main AndroidStudio project
 directory folder such as AndroidStudioGithub for example)
 7. Clone and open project
