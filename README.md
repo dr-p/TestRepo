@@ -1,7 +1,7 @@
 # AllrecipeKillerApp
 
 CLICK THIS LINK TO SEE THIS README WITH PROPER WORD FORMATTING FOR EASIER READING:
-https://raw.githubusercontent.com/dr-p/AllrecipeKillerApp/master/README.md
+https://raw.githubusercontent.com/dr-p/testRepo/master/README.md
 
 
 VERY IMPORTANT READ TWICE
